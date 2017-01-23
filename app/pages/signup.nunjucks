@@ -1,0 +1,83 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-signup">
+            <div class="container">
+                <div class="th-signup__form">
+                    <h3 class="th-signup__heading">Sign Up</h3>
+                    <form action="">
+                        <div class="th-signup__form__type">
+                            <div class="th-signup__form__element">
+                                <span class="th-radio">
+                                    <input type="radio" id="operator" name="type" checked value=""/>
+                                    <label class="th-radio__label" for="operator">
+                                        <span class="th-radio--faux"></span>
+                                        <span class="th-form-element__label">as tour operator</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="th-signup__form__element">
+                                <span class="th-radio">
+                                    <input type="radio" id="manager" name="type" value=""/>
+                                    <label class="th-radio__label" for="manager">
+                                        <span class="th-radio--faux"></span>
+                                        <span class="th-form-element__label">as tour manager</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="email" class="form-control" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter your email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Enter password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Repeat password</label>
+                            <input type="password" class="form-control" id="confirm-password" placeholder="Repeat Password">
+                        </div>
+
+                        <div class="th-signup__form__element">
+                            <span class="th-checkbox">
+                                <input type="checkbox" name="send-deals" id="checkbox-1956" checked="" />
+                                <label class="th-checkbox__label" for="checkbox-1956">
+                                    <span class="th-checkbox--faux"></span>
+                                    <span class="th-form-element__label">Send me special deals to my inbox</span>
+                                </label>
+                            </span>
+                        </div>
+
+                        <div class="th-signup__form__btns">
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                            <a href="#" class="btn">I have an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+    
+{% endblock %}

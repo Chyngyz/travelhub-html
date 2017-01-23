@@ -1,0 +1,80 @@
+<footer class="th-footer">
+    <div class="th-footer-top-wr">
+        <div class="container">
+            <div class="th-footer-top">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="th-footer__heading">Navigation</div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <nav class="th-footer__nav">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Partner Login</a></li>
+                                                <li><a href="#">Tour Operators</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <nav class="th-footer__nav">
+                                            <ul>
+                                                <li><a href="#">Guide Login</a></li>
+                                                <li><a href="#">Join Guid Community</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="th-footer__heading">Search</div>
+
+                                <form class="form-inline th-footer__search">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter the keywords">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary visible-lg-inline-block">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-sm-offset-1">
+                        <div class="th-footer__heading">CONTACTS</div>
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">Call Center:</div>
+                            <div class="th-footer__contact__tel">+1 (123) 12-34-56</div>
+                        </div>
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">E-mail:</div>
+                            <a href="#" class="th-footer__contact__email">info@travelhub.com</a>
+                        </div>
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">Follow us:</div>
+                            <ul class="th-footer__social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="th-footer-bottom">
+        <div class="container">
+            <div class="th-footer__copy">Copyright &copy; TravelHub. All rights reserved.</div>
+        </div>
+    </div>
+</footer>

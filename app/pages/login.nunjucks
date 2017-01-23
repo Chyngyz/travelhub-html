@@ -1,0 +1,43 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-login">
+            <div class="container">
+                <div class="th-login__form">
+                    <form>
+                        <h3 class="th-login__form__heading">Log In</h3>
+                        <input type="text" class="th-login__form__input" placeholder="Enter your Email or Username">
+                        <input type="text" class="th-login__form__input" placeholder="Enter password">
+                        <div class="th-login__form__btns">
+                            <button class="btn btn-primary">Log In</button>
+                            <a href="#" class="btn">Forgot password</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="th-login__signup">
+                    <h4 class="text-center">Sign Up:</h4>
+                    <div class="th-login__signup__type">
+                        <a href="#" class="btn btn-default">as Tour Manager</a>
+                        <a href="#" class="btn btn-outline">as Tour Operator</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+    
+{% endblock %}

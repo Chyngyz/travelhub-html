@@ -1,0 +1,51 @@
+<div class="th-tour-panel th-tour-panel_lg">
+    <div class="th-tour-panel__heading">
+        <a href="#">Netherlands Escape</a>
+        <span>12 days</span>
+    </div>
+    <div class="th-tour-panel__thumb">
+        <img src="https://dummyimage.com/270x156/dc185b/fff.png&text=tour" alt="">
+    </div>
+    <div class="th-tour-panel__bottom">
+        <div class="th-tour-panel__details">
+            <div class="th-tour-panel__details__item">
+                <div class="th-tour-panel__details__label">Price:</div>
+                <div class="th-tour-panel__details__val">&euro; 1,200</div>
+            </div>
+            <div class="th-tour-panel__details__item">
+                <div class="th-tour-panel__details__label">Seats left:</div>
+                <div class="th-tour-panel__details__val">10+</div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="#" class="btn btn-primary th-tour-panel__btn">VIEW MORE</a>
+    </div>
+</div>
+
+<div class="th-tour-panel th-tour-panel_sm">
+    <div class="th-tour-panel__l">
+        <div class="th-tour-panel__thumb">
+            <img src="https://dummyimage.com/270x156/dc185b/fff.png&text=tour" alt="">
+        </div>
+    </div>
+    <div class="th-tour-panel__r">
+        <div class="th-tour-panel__r__t">
+            <div class="th-tour-panel__heading">
+                <a href="#">Netherlands Escape</a>
+                <span>12 days</span>
+            </div>
+            <div class="th-tour-panel__details__item">
+                <div class="th-tour-panel__details__label">Seats left:</div>
+                <div class="th-tour-panel__details__val">10+</div>
+            </div>
+        </div>
+        <div class="th-tour-panel__r__b">
+            <div class="th-tour-panel__details__item">
+                <div class="th-tour-panel__details__label">Price:</div>
+                <div class="th-tour-panel__details__val">&euro; 1,200</div>
+            </div>
+            <a href="#" class="btn btn-primary th-tour-panel__btn">VIEW MORE</a>
+        </div>
+    </div>
+</div>

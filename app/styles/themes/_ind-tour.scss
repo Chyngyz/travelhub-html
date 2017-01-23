@@ -1,0 +1,105 @@
+.th-ind-tour {
+    padding: 30px 0 60px;
+
+
+    &__form {
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 20px;
+
+        .form-group {
+            margin-right: 5px;
+        }
+
+        label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #bbb;
+        }
+
+        .btn-primary {
+            text-transform: uppercase;
+            padding: 8px 25px;
+            font-size: 14px;
+        }
+
+        &-row {
+            &:first-child {
+                @include display(flex);
+                @include align-items(baseline);
+
+                @include MQM(MD) {
+                    @include flex-flow(row wrap);
+                }
+            }
+
+            &:nth-child(2) {
+                .form-group > label {
+                    display: block;
+                }
+
+                .th-checkbox {
+                    margin-right: 15px;
+                    margin-bottom: 20px;
+                }
+
+                .th-checkbox__label {
+                    color: #000;
+            
+                    .th-form-element__label {
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        &__date {
+            label {
+                display: block;
+            }
+
+            div {
+                @include display(flex);
+
+                select:nth-child(2) {
+                    width: 60px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        &__seats {
+            width: 10%;
+
+            @include MQM(SM) {
+                width: 20%;
+            }
+        }
+
+        &__country {
+            width: 20%;
+            @include MQM(SM) {
+                width: 30%;
+            }
+        }
+
+        &__budget {
+            width: 15%;
+
+            @include MQM(SM) {
+                width: 30%;
+            }
+
+            .clearfix {
+                @include display(flex);
+                @include align-items(center);
+
+                span {
+                    width: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

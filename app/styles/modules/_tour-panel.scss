@@ -1,0 +1,150 @@
+.th-tour-panel {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 25px 0 18px;
+
+    &_lg {
+        @include MQM(SM) {
+            display: none;
+        }
+    }
+
+    &_sm {
+        padding: 0;
+        border-radius: 0;
+        display: none;
+        margin-bottom: 10px;
+        @include MQM(SM) {
+            @include display(flex);
+        }
+    }
+
+    &__heading {
+        padding: 0 30px 11px;
+
+        @include MQM(MD) {
+            padding: 0  20px 11px;
+        }
+
+        a {
+            display: block;
+            color: #000;
+
+            @include MQM(MD) {
+                font-size: 14px;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: #dc185b;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            color: #bbb;
+
+            @include MQM(MD) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__thumb {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        font-size: 14px;
+        padding: 8px 32px;
+        text-transform: uppercase;
+
+        @include MQM(XS) {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+    }
+
+    &__bottom {
+        padding: 25px 30px 0;
+
+        @include MQM(MD) {
+            padding: 25px  20px 0;
+        }
+    }
+
+    &__details {
+        padding: 0 0 16px;
+        @include display(flex);
+        @include justify-content(space-between);
+        border-bottom: 1px dashed #bbbbbb;
+        margin-bottom: 18px;
+
+        &__item {
+            
+        }
+
+        &__label {
+            font-size: 12px;
+            color: #bbb;
+        }
+
+        &__val {
+            font-size: 16px;
+            color: #131313;
+        }
+    }
+    
+
+    &__l {
+        width: 186px;
+        height: 123px;
+        overflow: hidden;
+        @include flex(0 1 auto);
+        min-width: 186px;
+
+        @include MQM(XS) {
+            width: 150px;
+            min-width: 150px;
+        }
+
+        .th-tour-panel__thumb {
+            height: 100%;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    &__r {
+        padding: 15px 3px 15px 20px;
+        @include flex(1 0 auto);
+
+        @include MQM(XS) {
+            padding: 15px 3px 15px 8px;
+        }
+
+        &__t {
+            @include display(flex);
+            @include justify-content(space-between);
+            border-bottom: 1px dashed #bbbbbb;
+            margin-bottom: 12px;
+        }
+
+        &__b {
+            @include display(flex);
+            @include justify-content(space-between);
+            @include align-items(center);
+        }
+
+        .th-tour-panel__heading {
+            padding: 0 0 11px;
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-countries">
+            <div class="container">
+                <h2 class="text-center">Countries FOR TRAVEL</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/belgium.jpg')">
+                                    <span class="th-countries__country__title">BELGIUM</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/ireland.jpg')">
+                                    <span class="th-countries__country__title">Ireland</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/italy.jpg')">
+                                    <span class="th-countries__country__title">Italy</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/france.jpg')">
+                                    <span class="th-countries__country__title">France</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/germany.jpg')">
+                                    <span class="th-countries__country__title">Germany</span>
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4">
+                                <a href="#" class="th-countries__country" style="background-image: url('images/demo/spain.jpg')">
+                                    <span class="th-countries__country__title">Spain</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+    
+{% endblock %}

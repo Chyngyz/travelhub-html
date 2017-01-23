@@ -1,0 +1,135 @@
+.th-footer {
+    &__copy {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.3);
+        padding: 20px 0;
+    }
+
+    &__heading {
+        color: #fff;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #5a5a5a;
+
+        @include MQM(SM) {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__nav {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    font-size: 14px;
+                    line-height: 2;
+                    color: rgba(255, 255, 255, 0.3);
+
+                    @include MQM(SM) {
+                        font-size: 12px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+
+    &__search {
+        @include MQM(LG) {
+            input.form-control, .form-group {
+                width: 100%;
+            }
+        }
+
+        @include MQM(SM) {
+            input.form-control, .form-group {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__contact {
+        margin-bottom: 10px;
+
+        &__label {
+            font-size: 14px;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.3);
+            @include MQM(SM) {
+                font-size: 12px;
+            }
+        }
+        &__tel {
+            font-size: 18px;
+            color: #fff;
+
+            @include MQM(SM) {
+                font-size: 14px;
+            }
+        }
+
+        &__email {
+            text-decoration: underline;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+
+    &__social {
+        margin: 5px 0 0;
+        padding: 0;
+        @include display(flex);
+
+        li {
+            display: inline-block;
+            margin-right: 4px;
+
+            a {
+                width: 32px;
+                height: 32px;
+                color: #131313;
+                background-color: #fff;
+                border-radius: 50%;
+                display: block;
+                font-size: 22px;
+                text-align: center;
+                padding-top: 1px;
+                @include transition(.05s ease-in);
+
+                @include MQM(SM) {
+                    height: 28px;
+                    width: 28px;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    background-color: #dc185b;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.th-footer-top {
+    padding: 50px 0;
+
+    @include MQM(SM) {
+        padding: 15px 0;
+    }
+}
+
+.th-footer-top-wr {
+    background-color: #131313;
+}
+
+.th-footer-bottom {
+    background-color: #1b1b1b;
+}

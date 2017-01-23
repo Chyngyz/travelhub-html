@@ -1,0 +1,47 @@
+{% macro status(logosm=true, logolg=false, loggedin=false) %}
+    <div class="th-header th-header-white-wr">
+
+        <div class="container th-no-paddings">
+            <div class="th-header-white">
+
+                <div>
+                    <a href="/" class="th-header__logo-sm {% if logosm %} th-header__logo-sm_visible {% endif %}">
+                        <img src="images/logo-sm.png" srcset="images/logo-sm.png 1x, images/logo-sm@2x.png 2x" alt="TravelHub Logo">
+                    </a>
+
+                    <div class="th-header__motto">
+                        Travel Hub — Travelling Without Borders.
+                    </div>
+                    <!-- ./th-header__motto -->
+                </div>
+                
+                {% if logolg %}
+                <div class="th-header__logo">
+                    <a href="/">
+                        <img src="images/logo.png" srcset="images/logo.png 1x, images/logo@2x.png 2x" alt="TravelHub Logo">
+                    </a>
+                </div>
+                <!-- ./th-header__logo -->
+                {% endif %}
+                
+
+                {% if loggedin %}
+                    <div class="th-header__login">
+                        <ul class="th-login-nav">
+                            <li class="th-login-nav__item th-login-nav__item_active">
+                                <a href="/signup.html">Sign Up</a>
+                            </li>
+                            <li class="th-login-nav__divider">|</li>
+                            <li class="th-login-nav__item">
+                                <a href="/login.html">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                {% else %}
+                    <a href="#">Not Logged In</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- ./th-header-white-wr -->
+{% endmacro %}

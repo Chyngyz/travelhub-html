@@ -1,0 +1,174 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-ind-tour">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li class="active">Individual tour</li>
+                        </ol>
+                        <h2 class="th-no-margin-top">INDIVIDUAL TOUR</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        <form class="th-ind-tour__form">
+                            <div class="th-ind-tour__form-row">
+                                <div class="form-group th-ind-tour__form__date">
+                                    <label for="date">Date</label>
+                                    <div>
+                                        <select class="form-control" id="date">
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>Npvember</option>
+                                        </select>
+                                        <select class="form-control" id="date">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group th-ind-tour__form__seats">
+                                    <label for="seats">Seats</label>
+                                    <input type="text" class="form-control" id="seats" placeholder="Seats">
+                                </div>
+                                <div class="form-group th-ind-tour__form__country">
+                                    <label for="country">Country</label>
+                                    <input type="text" class="form-control" id="country" placeholder="Belgium">
+                                </div>
+                                <div class="form-group th-ind-tour__form__duration">
+                                    <label for="duration">Duration</label>
+                                    <select class="form-control" id="duration">
+                                        <option>10 days</option>
+                                        <option>12 days</option>
+                                        <option>20 days</option>
+                                    </select>
+                                </div>
+                                <div class="form-group th-ind-tour__form__guide">
+                                    <label for="date">Language Guide</label>
+                                    <select class="form-control" id="date">
+                                        <option>English</option>
+                                        <option>Russian</option>
+                                        <option>Spanish</option>
+                                    </select>
+                                </div>
+                                <div class="form-group th-ind-tour__form__budget">
+                                    <label>Budget</label>
+                                    <div class="clearfix">
+                                        <span>&euro;</span>
+                                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="th-ind-tour__form-row">
+                                <div class="form-group">
+                                    <label>NEEDS A SERVICES</label>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="visa" checked="" />
+                                        <label class="th-checkbox__label" for="visa">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Visa</span>
+                                        </label>
+                                    </span>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="hostel" />
+                                        <label class="th-checkbox__label" for="hostel">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Hostel</span>
+                                        </label>
+                                    </span>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="guide" />
+                                        <label class="th-checkbox__label" for="guide">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Guide</span>
+                                        </label>
+                                    </span>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="breakfast" />
+                                        <label class="th-checkbox__label" for="breakfast">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Breakfast</span>
+                                        </label>
+                                    </span>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="lunch" />
+                                        <label class="th-checkbox__label" for="lunch">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Lunch</span>
+                                        </label>
+                                    </span>
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="dinner" />
+                                        <label class="th-checkbox__label" for="dinner">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Dinner</span>
+                                        </label>
+                                    </span>
+
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="rentcar" />
+                                        <label class="th-checkbox__label" for="rentcar">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Rent a car</span>
+                                        </label>
+                                    </span>
+
+                                    <span class="th-checkbox">
+                                        <input type="checkbox" name="send-deals" id="transfer" />
+                                        <label class="th-checkbox__label" for="transfer">
+                                            <span class="th-checkbox--faux"></span>
+                                            <span class="th-form-element__label">Transfer</span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="th-ind-tour__form-row">
+                                <div class="form-group">
+                                    <label for="">Circs</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="th-ind-tour__form-row">
+                                <div class="form-group">
+                                    <label for="">Preferences</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create a request</button>
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+    
+{% endblock %}

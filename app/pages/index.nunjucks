@@ -1,0 +1,77 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(false, true, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-home-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center th-home-hero__headings">
+                        <h1>Find the Tour</h1>
+                        <h3>Select the options you want</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 th-home-hero__search">
+                        <form>
+                            <div class="th-home-search">
+                                <div class="th-home-search__input th-home-search__input_dest">
+                                    <input type="text" name="dest" value="Italy and Spain">
+                                </div>
+                                <div class="th-home-search__input th-home-search__input_date">
+                                    <input type="text" name="date" value="Mar 17">
+                                </div>
+                                <div class="th-home-search__input th-home-search__input_type">
+                                    <input type="text" name="type" value="Di">
+                                </div>
+                                <div class="th-home-search__submit">
+                                    <button type="submit">Find</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 text-center th-home-hero__advanced">
+                        <a href="#" class="btn btn-outline">Advanced search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="th-upcoming-tours">
+                <h2 class="text-center">Upcoming tours</h2>
+
+                <div class="row">
+                    {% for i in range(0, 4) -%}
+                    <div class="col-xs-12 col-sm-3 th-upcoming-tours__tour">
+                        {% include "partials/tour-panel.nunjucks" %}
+                    </div>
+                    {%- endfor %}
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <button class="btn btn-outline">More tours</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+    
+{% endblock %}

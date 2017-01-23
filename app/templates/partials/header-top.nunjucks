@@ -1,0 +1,41 @@
+<div class="th-header th-header-colored-wr">
+    <div class="container th-no-paddings">
+        <div class="th-header-colored">
+            <div class="th-header-colored__l">
+                <div class="th-header-colored__l__l">
+                    <div class="th-header__lang">
+                        <ul class="th-lang-switcher">
+                            <li class="th-lang-switcher__item th-lang-switcher__item_active th-js-lang-switcher"><a href="#">en</a></li>
+                            <li class="th-lang-switcher__item"><a href="#">de</a></li>
+                            <li class="th-lang-switcher__item"><a href="#">ru</a></li>
+                        </ul>
+                        <!-- ./th-lang-switcher -->
+                    </div>
+                    <!-- ./th-header__lang -->
+
+                    <div class="th-header__call">
+                        <span class="th-header__call__text">Call center:</span><a href="#">+1 (123) 123-45-67</a>
+                    </div>
+                    <!-- /.th-header__call -->
+                </div>
+                <div class="th-header-colored__l__r">
+                    <div class="th-header__nav-burger">
+                        <div class="th-nav-burger th-js-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="th-header-colored__r">
+                {% include "partials/header-navigation.nunjucks" %}
+            </div>
+            <!-- ./th-header-colored__r -->
+            
+        </div>
+    </div>
+</div>
+<!-- ./th-header-c -->

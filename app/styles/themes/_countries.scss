@@ -1,0 +1,64 @@
+.th-countries {
+    background: url('../images/hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 55px;
+    position: relative;
+
+    @include MQM(SM) {
+        padding: 20px 0 25px;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h2 {
+        color: #fff;
+        margin-bottom: 40px;
+
+        @include MQM(SM) {
+            font-size: 24px;
+        }
+    }
+
+    &__country {
+        display: block;
+        height: 170px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 6px;
+        color: #000;
+        text-align: center;
+        position: relative;
+        margin-bottom: 25px;
+        
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+
+        &__title {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            @include transform(translateY(-50%));
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 15px 0;
+            background: rgba(255, 255, 255, .7);
+        }
+    }
+}

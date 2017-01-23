@@ -1,0 +1,57 @@
+.th-lang-switcher {
+    margin: 0;
+    padding: 0;
+    @include display(flex);
+    @include transition(.15s ease-in-out);
+
+    @include MQM(SM) {
+        width: 30px;
+        overflow: hidden;
+
+        &.th-lang-switcher_open {
+            width: 85px;
+        }
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    &__item {
+
+        &:first-child {
+            a {
+                border-left: 1px solid #9c3d93;
+            }
+        }
+
+        a {
+            display: block;
+            color: #b869a8;
+            padding: 19px 6px;
+            text-decoration: none;
+            border-right: 1px solid #9c3d93;
+            text-align: center;
+
+            @include MQM(SM) {
+                font-size: 14px;
+                padding: 14px 6px;
+            }
+
+            &:hover,
+            &:focus,
+            &:visited {
+                text-decoration: none;
+                background-color: #832279;
+            }
+        }
+
+        &_active {
+            a {
+                background-color: #832279;
+                color: #fff;
+            }
+        }
+    }
+}

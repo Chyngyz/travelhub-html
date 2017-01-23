@@ -1,0 +1,84 @@
+.th-signup {
+    background: url('../images/register-hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 56px;
+    padding-bottom: 60px;
+
+    &__form {
+        width: 354px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include MQM(400) {
+            width: 95%;
+        }
+
+        &__element {
+            display: inline-block;
+            margin-right: 10px;
+
+            label {
+                color: #fff;
+                font-size: 14px;
+            }
+
+            .th-radio .th-form-element__label {
+                font-size: 14px;
+            }
+        }
+
+        &__type {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #6c7379;
+            margin-bottom: 15px;
+        }
+
+        &__btns {
+            @include display(flex);
+            @include align-items(center);
+            margin-top: 20px;
+
+            .btn-primary {
+                height: 54px;
+                width: 50%;
+            }
+
+            a.btn {
+                width: 50%;
+                color: rgba(255, 255, 255, .5);
+                font-size: 12px;
+            }
+        }
+
+        .form-group {
+            position: relative;
+
+            label {
+                color: #bbb;
+                position: absolute;
+                margin-bottom: 0;
+                top: 50%;
+                @include transform(translate(-120%, -50%));
+                width: 130px;
+
+                @include MQM(SM) {
+                    color: #bbb;
+                    position: static;
+                    margin-bottom: 0;
+                    top: auto;
+                    @include transform(translate(0));
+                    width: auto;
+                }
+            }
+
+            .form-control {
+                height: 42px;
+            }
+        }
+    }
+
+    &__heading {
+        color: #fff;
+    }
+}

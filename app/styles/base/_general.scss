@@ -1,0 +1,14 @@
+.th-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.th-no-paddings {
+    padding: 0;
+}
+
+.th-no-margin-top {
+    margin-top: 0 !important;
+}

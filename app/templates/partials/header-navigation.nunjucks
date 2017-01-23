@@ -1,0 +1,8 @@
+<nav class="th-header__nav th-nav">
+    <ul>
+        <li class="th-nav__item th-nav__item_active"><a href="/individual-tour.html" class="th-truncate">Individual tour</a></li>
+        <li class="th-nav__item"><a href="/countries.html" class="th-truncate">Countries</a></li>
+        <li class="th-nav__item"><a href="#" class="th-truncate">Partners</a></li>
+        <li class="th-nav__item"><a href="#" class="th-truncate">About Us</a></li>
+    </ul>
+</nav>

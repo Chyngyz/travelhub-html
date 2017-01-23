@@ -1,0 +1,29 @@
+.th-login-nav {
+    margin: 0;
+    padding: 0;
+    @include display(flex);
+    @include align-items(center);
+
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 18px 4px;
+    }
+
+    &__item {
+        
+        a {
+            color: #000;
+        }
+
+        &_active {
+            a {
+                color: #dc185b;
+            }
+        }
+    }
+
+    &__divider {
+        color: #535353;
+    }
+}
