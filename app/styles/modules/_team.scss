@@ -1,0 +1,43 @@
+.th-team {
+  @include display(flex);
+  @include justify-content(space-between);
+  @include flex-flow(row wrap);
+  margin-top: 20px;
+
+  @include MQM(MD) {
+    @include justify-content(center);
+  }
+
+
+  &__item {
+    width: 170px;
+    text-align: center;
+
+    @include MQM(MD) {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__thumb {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    margin-top: 10px;
+  }
+  
+  &__position {
+    font-size: 14px;
+    color: #bbb;
+  }
+}

@@ -1,0 +1,40 @@
+.th-contact-card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  &-wr {
+    @include MQM(SM) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @include MQM(SM) {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+
+  &__name {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #dc185b;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+  }
+
+  &__val {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 7px;
+  }
+}
