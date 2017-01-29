@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
+    <!-- build:magnificpopup styles/main.magnificpopup -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -98,12 +98,20 @@
                 
                     <div class="th-header__login">
                         <ul class="th-login-nav">
-                            <li class="th-login-nav__item th-login-nav__item_active">
-                                <a href="/signup.html">Sign Up</a>
+                            <li class="th-login-nav__item th-login-nav__user">
+                                <a href="#" class="th-truncate js-th-user-menu">
+                                    <span class="th-login-nav__user-profile">
+                                        <span class="th-login-nav__user-thumb">
+                                            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                                        </span>
+                                        <span class="th-login-nav__user-badge">3</span>
+                                    </span>
+                                    Alex Murphi
+                                </a>
                             </li>
                             <li class="th-login-nav__divider">|</li>
                             <li class="th-login-nav__item">
-                                <a href="/login.html">Sign In</a>
+                                <a href="/login.html" class="th-truncate">Log Out</a>
                             </li>
                         </ul>
                     </div>
@@ -280,7 +288,10 @@
 
     <!-- build:js scripts/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="scripts/vendor/bootstrap.js"></script>
+    <script src="/bower_components/matchHeight/jquery.matchHeight.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->

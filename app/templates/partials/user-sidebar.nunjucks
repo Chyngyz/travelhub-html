@@ -1,0 +1,23 @@
+<div class="th-agent-layout__sidebar th-agent-panel">
+    <div class="th-agent-panel__header">
+        <div class="th-agent-panel__thumb">
+            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+        </div>
+        <div class="th-agent-panel__title">
+            <div class="th-agent-panel__name">ALEX MURPHI</div>
+            <div class="th-agent-panel__position">TOUR MANAGER</div>
+        </div>
+    </div>
+    <ul class="th-agent-panel__nav">
+        <li>
+            <a href="#">
+                Messages
+                <span class="th-agent-panel__badge">2</span>
+            </a>
+        </li>
+        <li><a href="#" class="active">My Tours</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Auctions</a></li>
+        <li><a href="#">Contact administration</a></li>
+    </ul>
+</div>

@@ -6,7 +6,7 @@
 
         {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
 
-        {{ headerBottom.status(true, false, true) }}
+        {{ headerBottom.status(true, false, false) }}
     </header>
     <!-- ./header -->
 
@@ -24,7 +24,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-9">
-                        <form class="th-ind-tour__form">
+                        <form class="th-ind-tour__form" id="individual-tour-form">
                             <div class="th-ind-tour__form-row">
                                 <div class="form-group th-ind-tour__form__date">
                                     <label for="date">Date</label>
@@ -166,6 +166,13 @@
             </div>
         </div>
     </main>
+
+
+    <div id="response-popup" class="th-ind-tour__response text-center mfp-hide">
+        <div class="th-ind-tour__response__heading1">Thank you</div>
+        <div class="th-ind-tour__response__heading2">THE request was created</div>
+        <button class="btn btn-primary js-close-btn">Ok</button>
+    </div>
 
 
     {% include "partials/footer.nunjucks" %}

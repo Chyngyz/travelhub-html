@@ -1,0 +1,88 @@
+<div class="th-messages">
+    <div class="th-messages__l js-th-custom-scrollbar">
+        <ul class="th-messages__list">
+            {% for i in range(0, 6) -%}
+                <li>
+                    <a href="#" class="th-messages__profile">
+                    <span class="th-messages__profile__thumb">
+                        <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                    </span>
+                        <span class="th-messages__profile__title">
+                        <span class="th-messages__profile__name th-truncate">Wingbuddy</span>
+                        <span class="th-messages__profile__extra th-truncate">Island travell 10 days</span>
+                    </span>
+                    </a>
+                </li>
+            {%- endfor %}
+            <li>
+                <a href="#" class="th-messages__profile active">
+                    <span class="th-messages__profile__thumb">
+                        <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                    </span>
+                    <span class="th-messages__profile__title">
+                        <span class="th-messages__profile__name th-truncate">Wingbuddy</span>
+                        <span class="th-messages__profile__extra th-truncate">Island travell 10 days</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="th-messages__profile">
+                    <span class="th-messages__profile__thumb">
+                        <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                    </span>
+                    <span class="th-messages__profile__title">
+                        <span class="th-messages__profile__name th-truncate">Wingbuddy</span>
+                        <span class="th-messages__profile__extra th-truncate">Island travell 10 days</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="th-messages__r">
+        <div class="th-messages__r__t js-th-custom-scrollbar">
+            <ul class="th-messages__messages-list">
+                <li class="th-messages__message">
+                    <p>Hello! Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text?</p>
+                    <div class="clearfix">
+                        <div class="th-messages__message__date">10 JANUARY, 07:16</div>
+                        <a href="#" class="th-messages__message__author">Wingbuddy</a>
+                    </div>
+                </li>
+                <li class="th-messages__message">
+                    <p>Hello! Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text?</p>
+                    <div class="clearfix">
+                        <div class="th-messages__message__date">10 JANUARY, 07:16</div>
+                        <a href="#" class="th-messages__message__author">Wingbuddy</a>
+                    </div>
+                </li>
+                <li class="th-messages__message">
+                    <p>Hello! Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text?</p>
+                    <div class="clearfix">
+                        <div class="th-messages__message__date">10 JANUARY, 07:16</div>
+                        <a href="#" class="th-messages__message__author">Wingbuddy</a>
+                    </div>
+                </li>
+                <li class="th-messages__message new">
+                    <p>Hello! Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text?</p>
+                    <div class="clearfix">
+                        <div class="th-messages__message__date">10 JANUARY, 07:16</div>
+                        <a href="#" class="th-messages__message__author">Wingbuddy</a>
+                    </div>
+                </li>
+                <li class="th-messages__message new">
+                    <p>Hello! Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text?</p>
+                    <div class="clearfix">
+                        <div class="th-messages__message__date">10 JANUARY, 07:16</div>
+                        <a href="#" class="th-messages__message__author">Wingbuddy</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="th-messages__r__b">
+            <form action="" class="th-messages__send-form">
+                <textarea name="" id="message-textarea" class="form-control" cols="30" rows="4" placeholder="Enter the message"></textarea>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

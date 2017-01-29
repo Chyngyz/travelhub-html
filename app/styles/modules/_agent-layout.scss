@@ -1,0 +1,75 @@
+.th-agent {
+  &__header {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    .btn-outline {
+      font-size: 14px;
+      padding-left: 55px;
+      padding-right: 55px;
+      text-transform: uppercase;
+
+      @include MQM(SM) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+.th-agent-layout {
+  @include display(flex);
+  padding-bottom: 30px;
+
+  &__overlay {
+    display: block;
+    visibility: hidden;
+    @include transition(.2s ease-in);
+
+    @include MQM(MD) {
+      .th-agent-layout__sidebar.open ~ & {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.8);
+        z-index: 18;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__sidebar {
+    width: 270px;
+    height: 340px;
+    min-width: 270px;
+    @include transition(.2s ease-in);
+
+    @include MQM(MD) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      border-radius: 0 !important;
+      z-index: 20;
+      @include transform(translateX(-120%));
+
+      &.open {
+        @include transform(translateX(0));
+      }
+    }
+  }
+
+  &__body {
+    @include flex(0 1 auto);
+    margin-left: 30px;
+
+    @include MQM(MD) {
+      margin-left: 0;
+    }
+  }
+}

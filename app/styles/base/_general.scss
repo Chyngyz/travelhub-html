@@ -13,6 +13,18 @@
     margin: 0;
 }
 
+.th-no-margins-sm {
+    @include MQM(SM) {
+        margin: 0 !important;
+    }
+}
+
+.th-no-margins-xs {
+    @include MQM(XS) {
+        margin: 0 !important;
+    }
+}
+
 .th-no-margin-top {
     margin-top: 0 !important;
 }

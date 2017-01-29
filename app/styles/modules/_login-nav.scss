@@ -26,4 +26,61 @@
     &__divider {
         color: #535353;
     }
+
+    &__user {
+        max-width: 200px;
+        padding: 14px 3px !important;
+
+        @include MQM(SM) {
+            max-width: 170px;
+        }
+
+        @include MQM(XS) {
+            max-width: 140px;
+        }
+
+        a {
+            color: #dc185b;
+            text-decoration: none;
+            display: block;
+            padding: 3px 0;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        &-profile {
+            position: relative;
+            margin-right: 5px;
+        }
+
+        &-thumb {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            overflow: hidden;
+            vertical-align: middle;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-badge {
+            position: absolute;
+            text-align: center;
+            bottom: -8px;
+            right: 0;
+            font-size: 10px;
+            color: #fff;
+            background-color: #dc185b;
+            border-radius: 50%;
+            min-width: 14px;
+            height: 14px;
+        }
+    }
 }

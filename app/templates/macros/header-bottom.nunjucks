@@ -28,6 +28,26 @@
                 {% if loggedin %}
                     <div class="th-header__login">
                         <ul class="th-login-nav">
+                            <li class="th-login-nav__item th-login-nav__user">
+                                <a href="#" class="th-truncate js-th-user-menu">
+                                    <span class="th-login-nav__user-profile">
+                                        <span class="th-login-nav__user-thumb">
+                                            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                                        </span>
+                                        <span class="th-login-nav__user-badge">3</span>
+                                    </span>
+                                    Alex Murphi
+                                </a>
+                            </li>
+                            <li class="th-login-nav__divider">|</li>
+                            <li class="th-login-nav__item">
+                                <a href="/login.html" class="th-truncate">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                {% else %}
+                    <div class="th-header__login">
+                        <ul class="th-login-nav">
                             <li class="th-login-nav__item th-login-nav__item_active">
                                 <a href="/signup.html">Sign Up</a>
                             </li>
@@ -37,8 +57,6 @@
                             </li>
                         </ul>
                     </div>
-                {% else %}
-                    <a href="#">Not Logged In</a>
                 {% endif %}
             </div>
         </div>

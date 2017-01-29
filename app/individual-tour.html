@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
+    <!-- build:magnificpopup styles/main.magnificpopup -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -130,7 +130,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-9">
-                        <form class="th-ind-tour__form">
+                        <form class="th-ind-tour__form" id="individual-tour-form">
                             <div class="th-ind-tour__form-row">
                                 <div class="form-group th-ind-tour__form__date">
                                     <label for="date">Date</label>
@@ -274,6 +274,13 @@
     </main>
 
 
+    <div id="response-popup" class="th-ind-tour__response text-center mfp-hide">
+        <div class="th-ind-tour__response__heading1">Thank you</div>
+        <div class="th-ind-tour__response__heading2">THE request was created</div>
+        <button class="btn btn-primary js-close-btn">Ok</button>
+    </div>
+
+
     <footer class="th-footer">
     <div class="th-footer-top-wr">
         <div class="container">
@@ -371,7 +378,10 @@
 
     <!-- build:js scripts/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="scripts/vendor/bootstrap.js"></script>
+    <script src="/bower_components/matchHeight/jquery.matchHeight.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->

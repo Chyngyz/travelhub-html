@@ -6,7 +6,7 @@
 
         {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
 
-        {{ headerBottom.status(true, false, true) }}
+        {{ headerBottom.status(true, false, false) }}
     </header>
     <!-- ./header -->
 

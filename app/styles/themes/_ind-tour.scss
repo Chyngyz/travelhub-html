@@ -102,4 +102,34 @@
             }
         }
     }
+
+    &__response {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: auto;
+        max-width: 430px;
+        margin: 20px auto;
+        border-radius: 6px;
+
+        @include MQM(XS) {
+            width: 80%;
+        }
+        
+        &__heading1 {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        
+        &__heading2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #bbb;
+        }
+
+        button.btn {
+            margin-top: 18px;
+            width: 200px;
+        }
+    }
 }
