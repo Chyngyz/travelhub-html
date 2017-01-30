@@ -1,0 +1,94 @@
+.th-payment {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__content {
+    width: 770px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    margin-top: 20px;
+
+    @include MQM(MD) {
+      width: 100%;
+    }
+
+    @include MQM(XS) {
+      padding: 20px;
+    }
+
+    &__head {
+      @include display(flex);
+      @include justify-content(space-between);
+      @include align-items(center);
+      padding: 0 0 20px;
+      border-bottom: 1px solid #e4e4e4;
+
+      @include MQM(XS) {
+        @include flex-direction(column);
+        @include align-items(flex-start);
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 30px;
+    
+    .control-label {
+      text-align: left;
+      font-size: 12px;
+      color: #131313;
+    }
+
+    .form-control {
+      font-size: 12px;
+    }
+
+    .th-checkbox__label {
+      padding-left: 30px;
+      position: relative;
+
+      .th-checkbox--faux {
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+
+      .th-form-element__label {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .btn-primary {
+      padding: 16px 110px;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      @include MQM(XS) {
+        padding: 12px 18px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__licence {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 25px;
+  }
+
+  &__muted {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  &__heading {
+    font-size: 18px;
+    color: #131313;
+    font-weight: bold;
+  }
+}

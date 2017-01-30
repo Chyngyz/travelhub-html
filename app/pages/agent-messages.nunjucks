@@ -26,7 +26,8 @@
                     </div>
                 </div>
                 <div class="th-agent-layout">
-                    {% include "partials/user-sidebar.nunjucks" %}
+                    {% import 'macros/user-sidebar.nunjucks' as userSidebar  %}
+                    {{ userSidebar.status(false) }}
                     <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
 
 

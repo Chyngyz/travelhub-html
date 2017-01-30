@@ -41,6 +41,7 @@
     <script src="scripts/vendor/bootstrap.js"></script>
     <script src="/bower_components/matchHeight/jquery.matchHeight.js"></script>
     <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->

@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$('.th-js-burger').click(function(){
+	$('.js-th-burger').click(function(){
 		$(this).toggleClass('th-nav-burger_open');
 		$('.th-nav').toggleClass('th-nav_open');
 	});
 
-	$('.th-js-lang-switcher').click(function() {
+	$('.js-th-lang-switcher').click(function() {
 		$(this).parent().toggleClass('th-lang-switcher_open');
 
 		setTimeout(function() {
@@ -41,9 +41,13 @@ $(document).ready(function(){
 			e.preventDefault();
 			$('.th-agent-layout__sidebar').addClass('open');
 		}
-    })
+    });
 
 	$('.js-th-agent-menu-overlay').click(function () {
         $('.th-agent-layout__sidebar').removeClass('open');
-    })
+    });
+
+	// Payment page
+    $("#card-number").mask("9999 9999 9999 9999", {placeholder:"*"});
+    $("#expiry").mask("99/9999");
 });

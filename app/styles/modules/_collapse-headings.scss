@@ -1,0 +1,63 @@
+.th-collapse-head-simple {
+  display: block;
+  padding: 20px 30px;
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+  line-height: 1;
+
+  @include MQM(XS) {
+    padding: 15px 10px;
+  }
+
+  &[aria-expanded="true"] {
+    color: #dc185b;
+    
+    .th-collapse-head-simple__text {
+      color: #dc185b;
+    }
+
+    .th-collapse-head-simple__icon {
+      svg {
+        fill: #dc185b;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #dc185b;
+  }
+  &__text {
+    color: #535353;
+    font-size: 18px;
+    @include flex(1);
+
+    @include MQM(XS) {
+      font-size: 16px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 14px;
+    display: inline-block;
+    @include flex(0 1 24px);
+    svg {
+      fill: #bbbbbb;
+    }
+  }
+}
+
+
+.th-collapse-body-simple {
+  .panel-body {
+    color: #131313;
+    font-size: 14px;
+
+    @include MQM(XS) {
+      padding: 15px 10px;
+    }
+  }
+}

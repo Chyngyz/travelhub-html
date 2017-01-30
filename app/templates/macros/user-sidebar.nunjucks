@@ -1,4 +1,5 @@
-<div class="th-agent-layout__sidebar th-agent-panel">
+{% macro status(hidden=false) %}
+<div class="th-agent-layout__sidebar th-agent-panel {% if hidden %} visible-sm-block visible-xs-block {% endif %}">
     <div class="th-agent-panel__header">
         <div class="th-agent-panel__thumb">
             <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
@@ -21,3 +22,4 @@
         <li><a href="#">Contact administration</a></li>
     </ul>
 </div>
+{% endmacro %}

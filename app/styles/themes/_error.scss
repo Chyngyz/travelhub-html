@@ -1,0 +1,28 @@
+.th-error {
+  min-height: 500px;
+
+  &__content {
+    h2 {
+      @include MQM(XS) {
+        font-size: 20px;
+      }
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 24px;
+
+      @include MQM(XS) {
+        font-size: 16px;
+      }
+    }
+
+    a.btn {
+      margin-top: 2rem;
+      padding: 6px 80px;
+
+      @include MQM(XS) {
+        padding: 6px 16px;
+      }
+    }
+  }
+}

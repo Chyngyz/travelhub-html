@@ -5,7 +5,7 @@
                 <div class="th-header-colored__l__l">
                     <div class="th-header__lang">
                         <ul class="th-lang-switcher">
-                            <li class="th-lang-switcher__item th-lang-switcher__item_active th-js-lang-switcher"><a href="#">en</a></li>
+                            <li class="th-lang-switcher__item th-lang-switcher__item_active js-th-lang-switcher"><a href="#">en</a></li>
                             <li class="th-lang-switcher__item"><a href="#">de</a></li>
                             <li class="th-lang-switcher__item"><a href="#">ru</a></li>
                         </ul>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="th-header-colored__l__r">
                     <div class="th-header__nav-burger">
-                        <div class="th-nav-burger th-js-burger">
+                        <div class="th-nav-burger js-th-burger">
                             <span></span>
                             <span></span>
                             <span></span>
