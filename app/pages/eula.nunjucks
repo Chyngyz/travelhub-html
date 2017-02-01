@@ -1,0 +1,66 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-eula">
+            <div class="container th-no-paddings-sm">
+                <div>
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">License</li>
+                    </ol>
+                    <h2 class="th-no-margin-top">License</h2>
+                </div>
+
+                <div class="th-eula__wrap" data-height="#eula-content">
+                    <div class="th-eula__content" id="eula-content">
+                        <div class="th-eula__nav">
+                            <ul>
+                                <li><a href="#">Promotions
+                                <li><a href="#">Checklist</a></li>
+                                <li><a href="#">Why book with us</a></li>
+                                <li><a href="#">Best Price Guarantee</a></li>
+                                <li><a href="#">Travel Insurance for your Tour</a></li>
+                                <li><a href="#" class="active">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Legal notice</a></li>
+                                <li><a href="#">Average tour prices per day</a></li>
+                            </ul>
+                            <div class="th-eula__nav__trigger js-th-eula-nav">Choose document &#x25BC;</div>
+                        </div>
+
+                        <div class="th-eula__text">
+                            <h4>Terms & Conditions</h4>
+                            <p>The wonderful thing about Paris, is that it there is so much to experience, regardless of the time of day, or TourRadar GmbH (hereafter referred to as "TourRadar","we", "us", or "our") provides an online platform that connects Operators who have knowledge and experience with a particular travel destination or activity with Travellers seeking to experience such destinations and activities (collectively with the Site and Application (each as defined below), the "Services"). The Services are accessible at TourRadar.com and any other websites through which TourRadar makes the Services available (collectively, the "Site") and any related applications (the "Application"). By using the Services, you agree to comply with and be legally bound by the terms and conditions of these Terms of Service ("Terms"), whether or not you become a registered user of the Services. These Terms govern your access to and use of the Site, Application and Services and all Collective Content (defined below) and constitute a binding legal agreement between you and TourRadar. Please carefully read these Terms and our Privacy Policy and our Legal Notice, each of which is incorporated by reference into these Terms. If you do not agree to these Terms, you have no right to obtain information from or otherwise continue using the Services. Failure to use the Services in accordance with these Terms may subject you to civil and criminal penalties. TourRadar GmbH complies with the General Travel Terms and Conditions (ARB 1992). THE SERVICES COMPRISE AN ONLINE PLATFORM THROUGH WHICH OPERATORS (DEFINED BELOW) MAY CREATE LISTINGS (DEFINED BELOW) FOR GROUP TOURS (DEFINED BELOW) AND TRAVELLERS (DEFINED BELOW) MAY LEARN ABOUT AND BOOK SUCH GROUP TOURS. YOU UNDERSTAND AND AGREE THAT TOURRADAR IS NOT A PARTY TO ANY AGREEMENTS ENTERED INTO BETWEEN OPERATORS AND TRAVELLERS, NOR IS TOURRADAR AN AGENT OR INSURER. TOURRADAR HAS NO CONTROL OVER THE CONDUCT OF OPERATORS, TRAVELLERS AND OTHER USERS OF THE SERVICES OR ANY GROUP TOURS, AND DISCLAIMS ALL LIABILITY IN THIS REGARD.</p>
+                            <br>
+                            <h5><strong>Key Terms</strong></h5>
+                            <p>"Collective Content" means Member Content and TourRadar Content. "Content" means text, graphics, images, music, software (excluding the Application), audio, video, information or other materials. "Operator" means a Member who creates a Listing via the Services. "Listing" means a Group Tour that is listed by an Operator as available for booking via the Services. "Member" means a person who completes TourRadar's account registration process, including, but not limited to Operators and Travellers, as described under "Account Registration" below. "Member Content" means all Content that a Member posts, uploads, publishes, submits or transmits to be made available through the Services. "Tax" or "Taxes" mean any sales taxes, value added taxes (VAT), goods and services taxes (GST) and other similar municipal, state and federal indirect or other withholding and personal or corporate income taxes. "TourRadar Content" means all Content that TourRadar makes available through the Services, including any Content licensed from a third party, but excluding Member Content. "Traveller" means a Member who requests a booking of a Group Tour via the Services, or a Member who participates in an Group Tour and is not the Operator for such Group Tour. Certain portions of the Services (and your access to or use of certain aspects of the Services or Collective Content) may have different terms and conditions posted or may require you to agree with and accept additional terms and conditions. If there is a conflict between these Terms and terms and conditions posted for a specific portion of the Services, or Collective Content, the latter terms and conditions will take precedence with respect to your use of or access to that portion of the Services, or Collective Content. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% import 'macros/user-sidebar.nunjucks' as userSidebar  %}
+        {{ userSidebar.status(true) }}
+        <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+
+{% endblock %}
+
+
+

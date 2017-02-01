@@ -50,4 +50,33 @@ $(document).ready(function(){
 	// Payment page
     $("#card-number").mask("9999 9999 9999 9999", {placeholder:"*"});
     $("#expiry").mask("99/9999");
+
+    // Eula nav trigger
+	$('.js-th-eula-nav').click(function () {
+		$('.th-eula__nav').toggleClass('open');
+
+		if ($('.th-eula__nav.open').length) {
+			$(this).html('Hide &#x25B2;')
+		} else {
+            $(this).html('Choose document &#x25BC;')
+		}
+    })
+
+
+    // Same height as
+    jQuery.fn.sameHeightAs = function() {
+        $('[data-height]').each(function (ind, element) {
+            var targetElement = $(element).data('height');
+            if ($(targetElement).length && window.innerWidth < 998) {
+                var height = $(targetElement).outerHeight();
+                $(element).css('height', height);
+            }
+        });
+	}
+
+	$(window).resize(function () {
+        jQuery.fn.sameHeightAs();
+    })
+    jQuery.fn.sameHeightAs();
+
 });

@@ -9,6 +9,19 @@
     padding: 0;
 }
 
+.th-no-paddings-sm {
+    @include MQM(MD) {
+        padding: 0;
+    }
+
+}
+
+.th-no-paddings-xs {
+    @include MQM(SM) {
+        padding: 0;
+    }
+}
+
 .th-no-margins {
     margin: 0;
 }
