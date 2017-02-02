@@ -18,6 +18,47 @@
       }
     }
   }
+
+  &__discount {
+    position: relative;
+    padding: 35px 30px;
+    background: #fff;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+
+    @include MQM(XS) {
+      width: 95%;
+    }
+
+
+    &__heading1 {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    &__heading2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    &__form {
+      select {
+        width: 100px !important;
+        font-size: 14px;
+        display: inline-block;
+      }
+
+      .btn {
+        border: 1px solid;
+        width: 100px;
+      }
+    }
+  }
 }
 
 .th-agent-layout {

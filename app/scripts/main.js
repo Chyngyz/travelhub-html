@@ -79,4 +79,20 @@ $(document).ready(function(){
     })
     jQuery.fn.sameHeightAs();
 
+
+	// Add discount popup
+
+	$('.js-th-add-discount').click(function (e) {
+		e.preventDefault();
+
+        $.magnificPopup.open({
+            items: {
+                src: '#discount-popup',
+                type: 'inline'
+            }
+        }, 0);
+    })
+
+
+
 });

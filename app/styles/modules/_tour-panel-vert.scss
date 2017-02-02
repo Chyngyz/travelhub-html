@@ -1,0 +1,165 @@
+.th-tour-panel-vert {
+  position: relative;
+  padding-right: 30px;
+  padding-left: 195px;
+  border-radius: 6px;
+  height: 150px;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 8px;
+
+  @include MQM(SM) {
+    border-radius: 0;
+    padding-left: 96px;
+  }
+
+  &__thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 100%;
+    overflow: hidden;
+
+    @include MQM(SM) {
+      width: 78px;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    @include display(flex);
+
+  }
+
+  &__btns {
+    padding-top: 20px;
+
+    .btn {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 8px;
+      padding: 8px 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.btn-outline {
+        padding: 6px 40px;
+      }
+
+      &.btn-primary,
+      &.btn-outline {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    color: #131313;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+
+    @include MQM(SM) {
+      font-size: 14px;
+    }
+  }
+
+  &__meta {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include MQM(SM) {
+      @include display(flex);
+      @include flex-flow(row nowrap);
+    }
+
+    li {
+      display: inline-block;
+      font-size: 14px;
+      color: #131313;
+      text-transform: uppercase;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 1;
+      border-right: 1px solid #bbb;
+      white-space: nowrap;
+
+      @include MQM(SM) {
+        font-size: 12px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        text-transform: none;
+      }
+    }
+  }
+
+  &__tags {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1;
+    margin: 5px 0 20px;
+
+    @include MQM(SM) {
+      margin: 5px 0 10px;
+    }
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #eaeaea;
+    padding-top: 10px;
+
+    @include MQM(SM) {
+      @include display(flex);
+      @include flex-flow(row nowrap);
+    }
+
+    li {
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 1;
+      border-right: 1px solid #bbb;
+      white-space: nowrap;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        font-size: 12px;
+        color: #131313;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: #dc185b;
+        }
+      }
+    }
+  }
+
+}

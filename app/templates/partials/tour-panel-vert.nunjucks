@@ -1,0 +1,22 @@
+<div class="th-tour-panel-vert">
+    <div class="th-tour-panel-vert__thumb">
+        <img src="https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1173/1173238-bigthumbnail.jpg" alt="">
+    </div>
+    <div class="th-tour-panel-vert__content">
+        <div>
+            <h3 class="th-tour-panel-vert__heading">Island travel 10 days</h3>
+            <ul class="th-tour-panel-vert__meta">
+                <li>&euro;1200</li>
+                <li><a href="#" class="js-th-add-discount">Add sale</a></li>
+            </ul>
+            <div class="th-tour-panel-vert__tags">Italy, Bus tour, Rome, 7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</div>
+        </div>
+        <div class="th-tour-panel-vert__btns">
+            <a href="#" class="btn btn-primary">View More</a>
+            <a href="#" class="btn btn-outline">Edit tour</a>
+            <a href="#" class="btn">Delete Tour</a>
+        </div>
+
+    </div>
+</div>
+
