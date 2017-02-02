@@ -4,20 +4,25 @@
             {% for i in range(0, 6) -%}
                 <li>
                     <a href="#" class="th-messages__profile">
-                    <span class="th-messages__profile__thumb">
-                        <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
-                    </span>
+                        <span class="th-messages__profile__media">
+                            <span class="th-messages__profile__thumb">
+                                <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                            </span>
+                        </span>
                         <span class="th-messages__profile__title">
-                        <span class="th-messages__profile__name th-truncate">Wingbuddy</span>
-                        <span class="th-messages__profile__extra th-truncate">Island travell 10 days</span>
-                    </span>
+                            <span class="th-messages__profile__name th-truncate">Wingbuddy</span>
+                            <span class="th-messages__profile__extra th-truncate">Island travell 10 days</span>
+                        </span>
                     </a>
                 </li>
             {%- endfor %}
             <li>
                 <a href="#" class="th-messages__profile active">
-                    <span class="th-messages__profile__thumb">
-                        <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                    <span class="th-messages__profile__media">
+                        <span class="th-messages__profile__thumb">
+                            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                        </span>
+                        <span class="th-messages__profile__badge">4</span>
                     </span>
                     <span class="th-messages__profile__title">
                         <span class="th-messages__profile__name th-truncate">Wingbuddy</span>

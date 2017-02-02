@@ -1,15 +1,23 @@
-{% macro status(hidden=false) %}
+{% macro status(hidden=false, agent=true) %}
 <div class="th-agent-layout__sidebar th-agent-panel {% if hidden %} visible-sm-block visible-xs-block {% endif %}">
     <div class="th-agent-panel__header">
         <div class="th-agent-panel__thumb">
             <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
         </div>
         <div class="th-agent-panel__title">
-            <div class="th-agent-panel__name">ALEX MURPHI</div>
-            <div class="th-agent-panel__position">TOUR MANAGER</div>
+            {% if agent %}
+                <div class="th-agent-panel__name">ALEX MURPHI</div>
+                <div class="th-agent-panel__position">TOUR MANAGER</div>
+            {% endif %}
+            {% if not agent %}
+                <div class="th-agent-panel__name">Wingbuddy</div>
+                <div class="th-agent-panel__position">TOUR Operator</div>
+                <a href="#">My profile</a>
+            {% endif %}
         </div>
     </div>
     <ul class="th-agent-panel__nav">
+        {% if agent %}
         <li>
             <a href="#">
                 Messages
@@ -20,6 +28,19 @@
         <li><a href="#">History</a></li>
         <li><a href="#">Auctions</a></li>
         <li><a href="#">Contact administration</a></li>
+        {% endif %}
+        {% if not agent %}
+            <li>
+                <a href="#" class="active">
+                    Messages
+                    <span class="th-agent-panel__badge">2</span>
+                </a>
+            </li>
+            <li><a href="#">My Tours</a></li>
+            <li><a href="#">Orders <span class="th-agent-panel__badge">2</span></a></li>
+            <li><a href="#">Transfer <span class="th-agent-panel__badge">1</span></a></li>
+            <li><a href="#">Contact administration</a></li>
+        {% endif %}
     </ul>
 </div>
 {% endmacro %}

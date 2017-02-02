@@ -1,0 +1,46 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-agent">
+            <div class="container">
+                <div class="th-agent__header">
+                    <div>
+                        <ol class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li class="active">Personal Area</li>
+                        </ol>
+                        <h2 class="th-no-margin-top">Personal Area</h2>
+                    </div>
+                    <div class="text-right">
+                        <a href="#" class="btn btn-outline">Search Tour</a>
+                    </div>
+                </div>
+                <div class="th-agent-layout">
+                    {% import 'macros/user-sidebar.nunjucks' as userSidebar  %}
+                    {{ userSidebar.status(false, false) }}
+                    <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
+
+
+                    <div class="th-agent-layout__body">
+                        {% include "partials/messages.nunjucks" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+
+{% endblock %}
