@@ -28,6 +28,10 @@
         margin-left: 0;
         border-radius: 4px;
         padding: $padding-base-vertical 40px;
+
+        @media screen and (max-width: 480px) {
+          padding: $padding-base-vertical $padding-base-horizontal;
+        }
       }
     }
     &:last-child {
@@ -35,6 +39,10 @@
       > span {
         border-radius: 4px;
         padding: $padding-base-vertical 40px;
+
+        @media screen and (max-width: 480px) {
+          padding: $padding-base-vertical $padding-base-horizontal;
+        }
       }
     }
   }
