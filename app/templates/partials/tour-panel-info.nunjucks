@@ -1,0 +1,20 @@
+<div class="th-tour-panel-info">
+    <div class="th-tour-panel-info__thumb">
+        <img src="https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1173/1173238-bigthumbnail.jpg" alt="">
+    </div>
+    <div class="th-tour-panel-info__content">
+        <h3 class="th-tour-panel-info__heading">Island travel 10 days</h3>
+        <ul class="th-tour-panel-info__meta">
+            <li>2 jul 2017</li>
+            <li><a href="#">Wingbuddy</a></li>
+            <li>Completed</li>
+        </ul>
+        <div class="th-tour-panel-info__tags">Italy, Bus tour, Rome, 7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</div>
+        <ul class="th-tour-panel-info__links">
+            <li><a href="#">Ask a question</a></li>
+            <li><a href="#">Individual tour</a></li>
+            <li><a href="#">Write review</a></li>
+        </ul>
+    </div>
+</div>
+

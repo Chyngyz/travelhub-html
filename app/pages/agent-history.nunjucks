@@ -1,0 +1,51 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-agent">
+            <div class="container th-no-paddings-sm">
+                <div class="th-agent__header">
+                    <div>
+                        <ol class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">My profile</a></li>
+                            <li class="active">History</li>
+                        </ol>
+                        <h2 class="th-no-margin-top">History</h2>
+                    </div>
+                    <div class="text-right">
+                        <a href="#" class="btn btn-outline">Search Tour</a>
+                    </div>
+                </div>
+                <div class="th-agent-layout">
+                    {% import 'macros/user-sidebar.nunjucks' as userSidebar  %}
+                    {{ userSidebar.status(false) }}
+                    <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
+
+
+                    <div class="th-agent-layout__body">
+                        {% for i in range(0, 6) -%}
+                            {% include 'partials/tour-panel-info.nunjucks' %}
+                        {%- endfor %}
+
+                        {% include 'partials/pagination.nunjucks' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+
+{% endblock %}
