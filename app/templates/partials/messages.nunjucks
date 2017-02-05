@@ -43,6 +43,8 @@
             </li>
         </ul>
     </div>
+    <!-- ./th-messages__l -->
+
     <div class="th-messages__r">
         <div class="th-messages__r__t js-th-custom-scrollbar">
             <ul class="th-messages__messages-list">
@@ -82,6 +84,7 @@
                     </div>
                 </li>
             </ul>
+            <!-- ./th-messages__messages-list -->
         </div>
         <div class="th-messages__r__b">
             <form action="" class="th-messages__send-form">
@@ -90,4 +93,6 @@
             </form>
         </div>
     </div>
+    <!-- ./th-messages__r -->
 </div>
+<!-- ./th-messages -->

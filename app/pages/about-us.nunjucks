@@ -12,15 +12,13 @@
 
     <main>
         <div class="th-about-us">
-            <div class="container">
-                <div class="row th-no-margins-sm">
-                    <div class="col-xs-12">
-                        <ol class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li class="active">About us</li>
-                        </ol>
-                        <h2 class="th-no-margin-top">About Us</h2>
-                    </div>
+            <div class="container th-no-p-sm">
+                <div class="th-about-us__header">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">About us</li>
+                    </ol>
+                    <h2 class="th-no-mt">About Us</h2>
                 </div>
 
                 <div class="th-about-us__row row-1">
@@ -46,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="row th-no-margins">
+                <div class="row th-no-m-sm">
                     <div class="col-xs-12 text-center">
                         <h3>OUR TEAM</h3>
                         <span class="text-muted">we work for you</span>
@@ -68,13 +66,13 @@
                     </ul>
                 </div>
 
-                <div class="row th-no-margins">
+                <div class="row th-no-m-sm">
                     <div class="col-xs-12 text-center">
                         <h3 class="th-about-us__heading">CONTACT US</h3>
                     </div>
                 </div>
 
-                <div class="row th-no-margins  ">
+                <div class="row th-no-m-sm">
                     {% for i in range(0, 5) -%}
                         <div class="col-xs-12 col-sm-4 th-contact-card-wr">
                             <div class="th-contact-card">

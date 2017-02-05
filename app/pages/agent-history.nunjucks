@@ -12,7 +12,7 @@
 
     <main>
         <div class="th-agent">
-            <div class="container th-no-paddings-sm">
+            <div class="container th-no-p-sm">
                 <div class="th-agent__header">
                     <div>
                         <ol class="breadcrumb">
@@ -20,7 +20,7 @@
                             <li><a href="#">My profile</a></li>
                             <li class="active">History</li>
                         </ol>
-                        <h2 class="th-no-margin-top">History</h2>
+                        <h2 class="th-no-mt">History</h2>
                     </div>
                     <div class="text-right">
                         <a href="#" class="btn btn-outline">Search Tour</a>

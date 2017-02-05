@@ -1,0 +1,117 @@
+.th-tour-panel-new {
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+
+  &__header {
+    position: relative;
+    padding: 25px 20px 10px 66px;
+    font-size: 18px;
+    color: #131313;
+    text-transform: uppercase;
+  }
+
+  &__badge {
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 8px 10px 8px 30px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  &__body {
+    padding: 15px 30px 20px;
+
+    .form-control {
+      font-size: 12px;
+    }
+
+    .table {
+      & > thead > tr > {
+        & th {
+          font-size: 14px;
+          color: #bbb;
+          text-transform: uppercase;
+          padding: 8px 0;
+          border-bottom: 1px solid #e4e4e4;
+          font-weight: normal;
+
+          &:first-child {
+            width: 66%;
+          }
+
+          &:last-child {
+            width: 33%;
+          }
+        }
+      }
+
+      & > tbody > tr > {
+        & td {
+          padding: 8px 0;
+        }
+      }
+
+      .btn-sm {
+        background: #fff;
+        font-size: 12px;
+        padding: 6px 3px;
+        
+        &:hover,
+        &:focus,
+        &:active {
+          span {
+            color: #dc185b;
+          }
+        }
+      }
+    }
+    
+    .form-group {
+      margin: 0 0 10px;
+      
+      .control-label {
+        text-align: left;
+        font-size: 12px;
+        color: #131313;
+        padding-top: 9px;
+      }
+
+      .form-control {
+        font-size: 12px;
+        border: 1px solid #e6e6e6;
+
+        &:focus {
+          border-color: #66afe9;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

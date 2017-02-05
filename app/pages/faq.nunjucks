@@ -18,7 +18,7 @@
                         <li><a href="/">Home</a></li>
                         <li class="active">FAQ</li>
                     </ol>
-                    <h2 class="th-no-margin-top">FAQ</h2>
+                    <h2 class="th-no-mt">FAQ</h2>
                 </div>
 
                 <div class="th-faq__content">

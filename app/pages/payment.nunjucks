@@ -20,7 +20,7 @@
                         <li><a href="#">Italy travel 10 days</a></li>
                         <li class="active">PAYMENT</li>
                     </ol>
-                    <h2 class="th-no-margin-top">PAYMENT</h2>
+                    <h2 class="th-no-mt">PAYMENT</h2>
                 </div>
 
                 <div class="th-payment__content">

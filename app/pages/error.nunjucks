@@ -18,7 +18,7 @@
                         <li><a href="/">Home</a></li>
                         <li class="active">Error</li>
                     </ol>
-                    <h2 class="th-no-margin-top">Error</h2>
+                    <h2 class="th-no-mt">Error</h2>
                 </div>
                 <div class="text-center th-error__content">
                     <h2>Oops, you got lost</h2>

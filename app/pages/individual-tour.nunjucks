@@ -19,7 +19,7 @@
                             <li><a href="/">Home</a></li>
                             <li class="active">Individual tour</li>
                         </ol>
-                        <h2 class="th-no-margin-top">INDIVIDUAL TOUR</h2>
+                        <h2 class="th-no-mt">INDIVIDUAL TOUR</h2>
                     </div>
                 </div>
                 <div class="row">

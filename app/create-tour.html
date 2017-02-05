@@ -126,137 +126,148 @@
     <!-- ./header -->
 
     <main>
-        <div class="th-faq">
-            <div class="container">
-                <div>
+        <div class="th-ntour">
+            <div class="container th-no-p-sm">
+                <div class="th-ntour__header">
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li class="active">FAQ</li>
+                        <li><a href="#">Personal area</a></li>
+                        <li class="active">Add New tour</li>
                     </ol>
-                    <h2 class="th-no-mt">FAQ</h2>
+                    <h2 class="th-no-mt">Add New tour</h2>
                 </div>
+                <!-- ./th-ntour__header -->
 
-                <div class="th-faq__content">
+                <div class="th-ntour-layout">
+                    <form class="th-ntour__form">
 
-
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <a role="button"  class="th-collapse-head-simple" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="th-collapse-head-simple__text">Is there a minimum or maximum age to go on a Wingbuddy tour?</span>
-                                    <span class="th-collapse-head-simple__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14.06">
-    <g>
-        <rect width="24" height="2"/>
-        <rect y="4.02" width="24" height="2"/>
-        <rect y="8.04" width="15" height="2"/>
-        <rect y="12.06" width="15" height="2"/>
-        <path d="M20.47,14.06l-3.53-6H24Z"/>
-    </g>
-</svg>
-                                    </span>
-                                </a>
+                        <div class="th-tour-panel-new th-ntour__panel-sm">
+                            <div class="th-tour-panel-new__header">
+                                <div class="th-tour-panel-new__badge">1</div>
+                                Main Information
                             </div>
-                            <div id="collapseOne" class="th-collapse-body-simple panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            <!-- ./th-tour-panel-new__header -->
+
+                            <div class="th-tour-panel-new__body">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="tour-title" class="col-sm-4 control-label th-no-pl th-no-pr">Tour Title<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="tour-title" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Country<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tour-type" class="col-sm-4 control-label th-no-pl th-no-pr">Tour Type<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Start In<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Ends In<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Seats<sup>*</sup></label>
+                                        <div class="col-sm-2 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control th-w50" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Age Range<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control th-w50 th-dib" id="country" placeholder="">
+                                            <span class="th-pl10 th-pr10">&mdash;</span>
+                                            <input type="text" class="form-control th-w50 th-dib" id="country" placeholder="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- ./th-tour-panel-new__body -->
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <a class="th-collapse-head-simple collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="th-collapse-head-simple__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout?</span>
-                                    <span class="th-collapse-head-simple__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14.06">
-    <g>
-        <rect width="24" height="2"/>
-        <rect y="4.02" width="24" height="2"/>
-        <rect y="8.04" width="15" height="2"/>
-        <rect y="12.06" width="15" height="2"/>
-        <path d="M20.47,14.06l-3.53-6H24Z"/>
-    </g>
-</svg>
-                                    </span>
-                                </a>
+                        <!-- ./th-tour-panel-new -->
+
+
+                        <div class="th-tour-panel-new th-ntour__panel-sm">
+                            <div class="th-tour-panel-new__header">
+                                <div class="th-tour-panel-new__badge">3</div>
+                                DATE DEPARTATION
                             </div>
-                            <div id="collapseTwo" class="th-collapse-body-simple panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available.
-                                </div>
+                            <!-- ./th-tour-panel-new__header -->
+
+                            <div class="th-tour-panel-new__body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="th-bb">
+                                            <td>
+                                                <select class="form-control th-w65 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <select class="form-control th-w130 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <select class="form-control th-w65 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <span class="th-dib th-pr10">&euro;</span>
+                                                <input type="text" class="form-control th-dib th-w100">
+                                                <button class="btn btn-sm"><span class="fa fa-close"></span></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
                             </div>
+                            <!-- ./th-tour-panel-new__body -->
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <a class="th-collapse-head-simple collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="th-collapse-head-simple__text">The point of using Lorem Ipsum is that it has a more-or-less?</span>
-                                    <span class="th-collapse-head-simple__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14.06">
-    <g>
-        <rect width="24" height="2"/>
-        <rect y="4.02" width="24" height="2"/>
-        <rect y="8.04" width="15" height="2"/>
-        <rect y="12.06" width="15" height="2"/>
-        <path d="M20.47,14.06l-3.53-6H24Z"/>
-    </g>
-</svg>
-                                    </span>
-
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="th-collapse-body-simple panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center">
-                        <a href="#" class="btn btn-outline">I have not found the answer</a>
-                    </div>
+                        <!-- ./th-tour-panel-new -->
 
 
+
+                    </form>
+                    <!-- ./th-ntour__form -->
                 </div>
             </div>
         </div>
-
-        
-        
-<div class="th-agent-layout__sidebar th-agent-panel  visible-sm-block visible-xs-block ">
-    <div class="th-agent-panel__header">
-        <div class="th-agent-panel__thumb">
-            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
-        </div>
-        <div class="th-agent-panel__title">
-            
-                <div class="th-agent-panel__name">ALEX MURPHI</div>
-                <div class="th-agent-panel__position">TOUR MANAGER</div>
-            
-            
-        </div>
-    </div>
-    <!-- ./th-agent-panel__header -->
-
-    <ul class="th-agent-panel__nav">
-        
-        <li>
-            <a href="#">
-                Messages
-                <span class="th-agent-panel__badge">2</span>
-            </a>
-        </li>
-        <li><a href="#" class="active">My Tours</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Auctions</a></li>
-        <li><a href="#">Contact administration</a></li>
-        
-        
-    </ul>
-    <!-- ./th-agent-panel__nav -->
-</div>
-
-        <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
     </main>
 
 

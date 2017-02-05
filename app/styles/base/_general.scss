@@ -1,43 +1,134 @@
 .th-truncate {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.th-no-paddings {
-    padding: 0;
+.th-no-p {
+  padding: 0 !important;
 }
 
-.th-no-paddings-sm {
-    @include MQM(MD) {
-        padding: 0;
-    }
-
+.th-no-pl {
+  padding-left: 0;
 }
 
-.th-no-paddings-xs {
-    @include MQM(SM) {
-        padding: 0;
-    }
+.th-no-pr {
+  padding-right: 0;
 }
 
-.th-no-margins {
-    margin: 0;
+.th-no-pt {
+  padding-top: 0;
 }
 
-.th-no-margins-sm {
-    @include MQM(SM) {
-        margin: 0 !important;
-    }
+.th-no-pb {
+  padding-bottom: 0;
 }
 
-.th-no-margins-xs {
-    @include MQM(XS) {
-        margin: 0 !important;
-    }
+.th-no-p-sm {
+  @include MQM(MD) {
+    padding: 0 !important;
+  }
 }
 
-.th-no-margin-top {
-    margin-top: 0 !important;
+.th-no-p-xs {
+  @include MQM(SM) {
+    padding: 0 !important;
+  }
+}
+
+.th-no-m {
+  margin: 0 !important;
+}
+
+.th-no-m-sm {
+  @include MQM(SM) {
+    margin: 0 !important;
+  }
+}
+
+.th-no-m-xs {
+  @include MQM(XS) {
+    margin: 0 !important;
+  }
+}
+
+.th-no-mt {
+  margin-top: 0 !important;
+}
+
+.th-no-mb {
+  margin-bottom: 0 !important;
+}
+
+.th-no-ml {
+  margin-left: 0 !important;
+}
+
+.th-no-mr {
+  margin-right: 0 !important;
+}
+
+.th-dib {
+  display: inline-block;
+}
+
+$values: 10, 15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 80, 90, 100;
+
+@each $value in $values {
+  .th-w#{$value} {
+    width: #{$value}px;
+  }
+
+  .th-pt#{$value} {
+    padding-top: #{$value}px;
+  }
+
+  .th-pl#{$value} {
+    padding-left: #{$value}px;
+  }
+
+  .th-pr#{$value} {
+    padding-right: #{$value}px;
+  }
+
+  .th-pb#{$value} {
+    padding-bottom: #{$value}px;
+  }
+
+  .th-mt#{$value} {
+    margin-top: #{$value}px;
+  }
+
+  .th-mb#{$value} {
+    margin-bottom: #{$value}px;
+  }
+
+  .th-ml#{$value} {
+    margin-left: #{$value}px;
+  }
+
+  .th-mr#{$value} {
+    margin-right: #{$value}px;
+  }
+}
+
+.th-w130 {
+  width: 130px;
+}
+
+.th-bb {
+  border-bottom: 1px solid #bbb;
+}
+
+.th-bt {
+  border-bottom: 1px solid #bbb;
+}
+
+.th-br {
+  border-right: 1px solid #bbb;
+}
+
+.th-bl {
+  border-left: 1px solid #bbb;
 }

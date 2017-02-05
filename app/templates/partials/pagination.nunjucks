@@ -1,4 +1,4 @@
-<nav aria-label="Page navigation" class="text-center">
+<nav aria-label="Page navigation" class="text-center th-pagination">
     <ul class="pagination">
         <li class="disabled">
             <a href="#" aria-label="Previous">
@@ -17,3 +17,4 @@
         </li>
     </ul>
 </nav>
+<!-- ./th-pagination -->

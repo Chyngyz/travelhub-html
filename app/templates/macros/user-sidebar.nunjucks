@@ -16,6 +16,8 @@
             {% endif %}
         </div>
     </div>
+    <!-- ./th-agent-panel__header -->
+
     <ul class="th-agent-panel__nav">
         {% if agent %}
         <li>
@@ -42,5 +44,6 @@
             <li><a href="#">Contact administration</a></li>
         {% endif %}
     </ul>
+    <!-- ./th-agent-panel__nav -->
 </div>
 {% endmacro %}

@@ -1,0 +1,50 @@
+.th-ntour {
+  &__header {
+    padding: 20px 0;
+  }
+
+  &__panel-sm {
+    width: 500px;
+
+    @include MQM(SM) {
+      width: 100%;
+    }
+  }
+
+  &__panel-md {
+    width: 640px;
+
+    @include MQM(SM) {
+      width: 100%;
+    }
+  }
+}
+
+.th-ntour-layout {
+  .th-tour-panel-new {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

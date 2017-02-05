@@ -1,7 +1,7 @@
 {% macro status(logosm=true, logolg=false, loggedin=false) %}
     <div class="th-header th-header-white-wr">
 
-        <div class="container th-no-paddings">
+        <div class="container th-no-p">
             <div class="th-header-white">
 
                 <div>

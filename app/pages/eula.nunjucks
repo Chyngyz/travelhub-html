@@ -12,13 +12,13 @@
 
     <main>
         <div class="th-eula">
-            <div class="container th-no-paddings-sm">
+            <div class="container th-no-p-sm">
                 <div>
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
                         <li class="active">License</li>
                     </ol>
-                    <h2 class="th-no-margin-top">License</h2>
+                    <h2 class="th-no-mt">License</h2>
                 </div>
 
                 <div class="th-eula__wrap" data-height="#eula-content">

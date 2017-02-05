@@ -1,0 +1,162 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+    <header>
+        {% include "partials/header-top.nunjucks" %}
+
+        {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+        {{ headerBottom.status(true, false, true) }}
+    </header>
+    <!-- ./header -->
+
+    <main>
+        <div class="th-ntour">
+            <div class="container th-no-p-sm">
+                <div class="th-ntour__header">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Personal area</a></li>
+                        <li class="active">Add New tour</li>
+                    </ol>
+                    <h2 class="th-no-mt">Add New tour</h2>
+                </div>
+                <!-- ./th-ntour__header -->
+
+                <div class="th-ntour-layout">
+                    <form class="th-ntour__form">
+
+                        <div class="th-tour-panel-new th-ntour__panel-sm">
+                            <div class="th-tour-panel-new__header">
+                                <div class="th-tour-panel-new__badge">1</div>
+                                Main Information
+                            </div>
+                            <!-- ./th-tour-panel-new__header -->
+
+                            <div class="th-tour-panel-new__body">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="tour-title" class="col-sm-4 control-label th-no-pl th-no-pr">Tour Title<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="tour-title" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Country<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tour-type" class="col-sm-4 control-label th-no-pl th-no-pr">Tour Type<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Start In<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Ends In<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Seats<sup>*</sup></label>
+                                        <div class="col-sm-2 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control th-w50" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-sm-4 control-label th-no-pl th-no-pr">Age Range<sup>*</sup></label>
+                                        <div class="col-sm-8 th-no-pl th-no-pr">
+                                            <input type="text" class="form-control th-w50 th-dib" id="country" placeholder="">
+                                            <span class="th-pl10 th-pr10">&mdash;</span>
+                                            <input type="text" class="form-control th-w50 th-dib" id="country" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./th-tour-panel-new__body -->
+                        </div>
+                        <!-- ./th-tour-panel-new -->
+
+
+                        <div class="th-tour-panel-new th-ntour__panel-sm">
+                            <div class="th-tour-panel-new__header">
+                                <div class="th-tour-panel-new__badge">3</div>
+                                DATE DEPARTATION
+                            </div>
+                            <!-- ./th-tour-panel-new__header -->
+
+                            <div class="th-tour-panel-new__body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="th-bb">
+                                            <td>
+                                                <select class="form-control th-w65 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <select class="form-control th-w130 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <select class="form-control th-w65 th-dib">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <span class="th-dib th-pr10">&euro;</span>
+                                                <input type="text" class="form-control th-dib th-w100">
+                                                <button class="btn btn-sm"><span class="fa fa-close"></span></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <!-- ./th-tour-panel-new__body -->
+                        </div>
+                        <!-- ./th-tour-panel-new -->
+
+
+
+                    </form>
+                    <!-- ./th-ntour__form -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    {% include "partials/footer.nunjucks" %}
+
+
+{% endblock %}

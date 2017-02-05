@@ -22,6 +22,7 @@
         <a href="#" class="btn btn-primary th-tour-panel__btn">VIEW MORE</a>
     </div>
 </div>
+<!-- ./th-tour-panel -->
 
 <div class="th-tour-panel th-tour-panel_sm">
     <div class="th-tour-panel__l">
@@ -49,3 +50,4 @@
         </div>
     </div>
 </div>
+<!-- ./th-tour-panel -->
