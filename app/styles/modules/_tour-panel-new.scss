@@ -25,13 +25,34 @@
   }
 
   &__body {
-    padding: 15px 30px 20px;
+    padding: 15px 30px 0;
 
     .form-control {
       font-size: 12px;
     }
 
+    .btn-sm {
+      background: #fff;
+      font-size: 12px;
+      padding: 6px 3px;
+      color: #bbb;
+
+      &:hover,
+      &:focus,
+      &:active {
+        span {
+          color: #dc185b;
+        }
+      }
+    }
+
     .table {
+      margin-bottom: 0;
+
+      .th-bb {
+        border-color: #e4e4e4;
+      }
+
       & > thead > tr > {
         & th {
           font-size: 14px;
@@ -56,25 +77,11 @@
           padding: 8px 0;
         }
       }
-
-      .btn-sm {
-        background: #fff;
-        font-size: 12px;
-        padding: 6px 3px;
-        
-        &:hover,
-        &:focus,
-        &:active {
-          span {
-            color: #dc185b;
-          }
-        }
-      }
     }
-    
+
     .form-group {
       margin: 0 0 10px;
-      
+
       .control-label {
         text-align: left;
         font-size: 12px;
@@ -92,16 +99,293 @@
       }
     }
   }
+
+
+  &__add {
+    text-align: center;
+    color: $pink;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 0;
+  }
+}
+
+.th-form-includes {
+  padding: 0 2.5rem;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+
+  .th-checkbox {
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+    .fa {
+      color: #bbb;
+    }
+  }
+
+  &__head {
+    @include display(flex);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    width: 75%;
+  }
+
+  &__price {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+    padding-left: 10px;
+    width: 25%;
+
+    input {
+      width: 80%;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 15px;
+  }
 }
 
 
 
+.th-form-guides {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #e4e4e4;
+
+  li {
+    padding: .5rem 0;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__lang {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    input {
+      margin-right: 10px;
+    }
+  }
+}
 
 
 
+.th-form-months {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+    border-top: 1px solid #e4e4e4;
+    padding: 2px 0;
+
+    &:last-child {
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    width: 30%;
+  }
+
+  &__status {
+    @include display(flex);
+    @include justify-content(flex-end);
+    width: 70%;
+  }
+
+  &__divider {
+    color: #bbb;
+  }
+
+  &__radio-select {
+    input[type="radio"] {
+      display: none;
+
+      &:checked {
+        & + label,
+        & ~ label {
+          color: $pink;
+        }
+      }
+    }
+    label {
+      padding: 0 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #bbb;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.th-form-services {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #e4e4e4;
+
+  li {
+    @include display(flex);
+    padding: .5rem 0;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    width: 70%;
+  }
+
+  &__price {
+    padding-left: 10px;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    input {
+      width: 60%;
+    }
+    width: 30%;
+  }
+}
+
+
+.th-form-duration {
+  padding-bottom: 20px;
+
+  &__head {
+    @include display(flex);
+    @include justify-content(flex-start);
+    @include align-items(center);
+
+    select {
+      width: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    width: 30%;
+  }
+
+
+  &__table {
+    margin-top: 1.5rem;
+
+    th {
+      font-size: 12px;
+      color: #bbb;
+      padding-bottom: .5rem;
+
+      &:first-child {
+        width: 50px;
+      }
+    }
+
+    td {
+      font-size: 14px;
+      vertical-align: top;
+      padding: .5rem 0;
+      border-top: 1px solid #e4e4e4;
+
+      &:first-child {
+        padding-top: 10px;
+      }
+
+      input {
+        width: 90%;
+      }
+    }
+  }
+}
 
 
 
+.th-form-images {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @include display(flex);
+  @include flex-flow(row wrap);
+
+  &__image {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__add {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+
+    input[type="file"] {
+      display: none;
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        color: $pink;
+        font-weight: bold;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
 
 
 

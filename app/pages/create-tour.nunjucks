@@ -33,7 +33,7 @@
                             </div>
                             <!-- ./th-tour-panel-new__header -->
 
-                            <div class="th-tour-panel-new__body">
+                            <div class="th-tour-panel-new__body th-pb20">
                                 <div class="form-horizontal">
                                     <div class="form-group">
                                         <label for="tour-title" class="col-sm-4 control-label th-no-pl th-no-pr">Tour Title<sup>*</sup></label>
@@ -92,6 +92,61 @@
                         <!-- ./th-tour-panel-new -->
 
 
+
+                        <div class="th-tour-panel-new th-ntour__panel-sm">
+                          <div class="th-tour-panel-new__header">
+                            <div class="th-tour-panel-new__badge">2</div>
+                            Duration & DESTINATION
+                          </div>
+                          <!-- ./th-tour-panel-new__header -->
+
+                          <div class="th-tour-panel-new__body th-form-duration">
+                            <div class="th-form-duration__head">
+                              <div class="th-form-duration__title">Duration</div>
+                              <select name="duration" id="" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                              </select>
+                            </div>
+
+                            <table class="th-form-duration__table">
+                              <thead>
+                                <tr>
+                                  <th>Day</th>
+                                  <th>Destination</th>
+                                  <th>Description</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input type="text" class="form-control">
+                                  </td>
+                                  <td>
+                                    <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>
+                                    <input type="text" class="form-control">
+                                  </td>
+                                  <td>
+                                    <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- ./th-tour-panel-new__body -->
+                        </div>
+                        <!-- ./th-tour-panel-new -->
+
+
+
+
+
                         <div class="th-tour-panel-new th-ntour__panel-sm">
                             <div class="th-tour-panel-new__header">
                                 <div class="th-tour-panel-new__badge">3</div>
@@ -141,10 +196,255 @@
                                     </tbody>
 
                                 </table>
+
+                                <div class="th-tour-panel-new__add">
+                                  + Add new
+                                </div>
                             </div>
                             <!-- ./th-tour-panel-new__body -->
                         </div>
                         <!-- ./th-tour-panel-new -->
+
+
+                      <div class="th-tour-panel-new th-ntour__panel-sm">
+                        <div class="th-tour-panel-new__header">
+                          <div class="th-tour-panel-new__badge">4</div>
+                          WHAT’S NEED & included
+                        </div>
+                        <!-- ./th-tour-panel-new__header -->
+
+                        <div class="th-tour-panel-new__body">
+                          <ul class="th-tour-panel-new__included th-form-includes">
+                            <li>
+                              <span class="th-checkbox">
+                                  <input type="checkbox" name="includes-1" id="checkbox-1" checked="">
+                                  <label class="th-checkbox__label" for="checkbox-1">
+                                      <span class="th-checkbox--faux"></span>
+                                  </label>
+                              </span>
+                              <div class="th-form-includes__head">
+                                <div class="th-form-includes__title">
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="th-form-includes__price">
+                                  <span>&euro;</span>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="th-form-includes__bottom">
+                                <textarea name="includes-text-1" id="" rows="3" class="form-control"></textarea>
+                              </div>
+
+                              <button class="btn btn-sm th-form-includes__close"><span class="fa fa-close"></span></button>
+
+                            </li>
+                          </ul>
+
+                          <div class="th-tour-panel-new__add">
+                            + Add new
+                          </div>
+                        </div>
+                        <!-- ./th-tour-panel-new__body -->
+                      </div>
+                      <!-- ./th-tour-panel-new -->
+
+
+                      <div class="th-tour-panel-new th-ntour__panel-sm">
+                        <div class="th-tour-panel-new__header">
+                          <div class="th-tour-panel-new__badge">5</div>
+                          OTHER SERVICES
+                        </div>
+                        <!-- ./th-tour-panel-new__header -->
+
+                        <div class="th-tour-panel-new__body">
+                          <ul class="th-form-services">
+                            <li>
+                              <div class="th-form-services__title">
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="th-form-services__price">
+                                <span>&euro;</span>
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm th-form-services__close"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+
+                            <li>
+                              <div class="th-form-services__title">
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="th-form-services__price">
+                                <span>&euro;</span>
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm th-form-services__close"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+
+                            <li>
+                              <div class="th-form-services__title">
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="th-form-services__price">
+                                <span>&euro;</span>
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm th-form-services__close"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="th-tour-panel-new__add">
+                            + Add new
+                          </div>
+                        </div>
+                        <!-- ./th-tour-panel-new__body -->
+                      </div>
+                      <!-- ./th-tour-panel-new -->
+
+
+                      <div class="th-tour-panel-new th-ntour__panel-sm">
+                        <div class="th-tour-panel-new__header">
+                          <div class="th-tour-panel-new__badge">6</div>
+                          LANGUAGE GUIDES
+                        </div>
+                        <!-- ./th-tour-panel-new__header -->
+
+                        <div class="th-tour-panel-new__body">
+                          <ul class="th-tour-panel-new__guides th-form-guides">
+                            <li>
+                              <div class="th-form-guides__lang">
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="th-form-guides__lang">
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="th-form-guides__lang">
+                                <input type="text" class="form-control">
+                                <button class="btn btn-sm"><span class="fa fa-close"></span></button>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="th-tour-panel-new__add">
+                            + Add new
+                          </div>
+                        </div>
+                        <!-- ./th-tour-panel-new__body -->
+                      </div>
+                      <!-- ./th-tour-panel-new -->
+
+
+
+
+
+                      <div class="th-tour-panel-new th-ntour__panel-sm">
+                        <div class="th-tour-panel-new__header">
+                          <div class="th-tour-panel-new__badge">7</div>
+                          Available Months
+                        </div>
+                        <!-- ./th-tour-panel-new__header -->
+
+                        <div class="th-tour-panel-new__body">
+                          <ul class="th-form-months">
+                            <li>
+                              <div class="th-form-months__name">January</div>
+                              <div class="th-form-months__status">
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-1" id="january-availability-1" value="not-available">
+                                  <label for="january-availability-1">
+                                    NOT AVAILABLE
+                                  </label>
+                                </div>
+                                <span class="th-form-months__divider">|</span>
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-1" id="january-availability-2" value="available">
+                                  <label for="january-availability-2">
+                                    AVAILABLE
+                                  </label>
+                                </div>
+                                <span class="th-form-months__divider">|</span>
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-1" id="january-availability-3" value="best">
+                                  <label for="january-availability-3">
+                                    Best
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+
+                            <li>
+                              <div class="th-form-months__name">Fabruary</div>
+                              <div class="th-form-months__status">
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-2" id="fabruary-availability-1" value="not-available">
+                                  <label for="fabruary-availability-1">
+                                    NOT AVAILABLE
+                                  </label>
+                                </div>
+                                <span class="th-form-months__divider">|</span>
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-2" id="fabruary-availability-2" value="available">
+                                  <label for="fabruary-availability-2">
+                                    AVAILABLE
+                                  </label>
+                                </div>
+                                <span class="th-form-months__divider">|</span>
+                                <div class="th-form-months__radio-select">
+                                  <input type="radio" name="status-2" id="fabruary-availability-3" value="best">
+                                  <label for="fabruary-availability-3">
+                                    Best
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="th-tour-panel-new__add">
+                            + Add new
+                          </div>
+                        </div>
+                        <!-- ./th-tour-panel-new__body -->
+                      </div>
+                      <!-- ./th-tour-panel-new -->
+
+
+
+
+                      <div class="th-tour-panel-new th-ntour__panel-sm">
+                        <div class="th-tour-panel-new__header">
+                          <div class="th-tour-panel-new__badge">7</div>
+                          Images
+                        </div>
+                        <!-- ./th-tour-panel-new__header -->
+
+                        <div class="th-tour-panel-new__body">
+                          <ul class="th-form-images">
+                            <li>
+                              <div class="th-form-images__image">
+                                <img src="http://pipsum.com/140x140.jpg" alt="">
+                              </div>
+                            </li>
+                            <li>
+                              <div class="th-form-images__image">
+                                <img src="http://pipsum.com/140x140.jpg" alt="">
+                              </div>
+                            </li>
+                            <li>
+                              <div class="th-form-images__add">
+                                <input type="file" name="image" id="th-form-file-upload" accept="image/*">
+                                <label for="th-form-file-upload"><span>+ Load image</span></label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- ./th-tour-panel-new__body -->
+                      </div>
+                      <!-- ./th-tour-panel-new -->
 
 
 

@@ -1,3 +1,5 @@
+$pink: #dc185b;
+
 .th-truncate {
   max-width: 100%;
   overflow: hidden;
@@ -77,39 +79,39 @@ $values: 10, 15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 80, 90, 100;
 
 @each $value in $values {
   .th-w#{$value} {
-    width: #{$value}px;
+    width: #{$value}px !important;
   }
 
   .th-pt#{$value} {
-    padding-top: #{$value}px;
+    padding-top: #{$value}px !important;
   }
 
   .th-pl#{$value} {
-    padding-left: #{$value}px;
+    padding-left: #{$value}px !important;
   }
 
   .th-pr#{$value} {
-    padding-right: #{$value}px;
+    padding-right: #{$value}px !important;
   }
 
   .th-pb#{$value} {
-    padding-bottom: #{$value}px;
+    padding-bottom: #{$value}px !important;
   }
 
   .th-mt#{$value} {
-    margin-top: #{$value}px;
+    margin-top: #{$value}px !important;
   }
 
   .th-mb#{$value} {
-    margin-bottom: #{$value}px;
+    margin-bottom: #{$value}px !important;
   }
 
   .th-ml#{$value} {
-    margin-left: #{$value}px;
+    margin-left: #{$value}px !important;
   }
 
   .th-mr#{$value} {
-    margin-right: #{$value}px;
+    margin-right: #{$value}px !important;
   }
 }
 
