@@ -1,0 +1,659 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starteer</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:magnificpopup styles/main.magnificpopup -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+  <header>
+    <div class="th-header th-header-colored-wr">
+    <div class="container th-no-p">
+        <div class="th-header-colored">
+            <div class="th-header-colored__l">
+                <div class="th-header-colored__l__l">
+                    <div class="th-header__lang">
+                        <ul class="th-lang-switcher">
+                            <li class="th-lang-switcher__item th-lang-switcher__item_active js-th-lang-switcher"><a href="#">en</a></li>
+                            <li class="th-lang-switcher__item"><a href="#">de</a></li>
+                            <li class="th-lang-switcher__item"><a href="#">ru</a></li>
+                        </ul>
+                        <!-- ./th-lang-switcher -->
+                    </div>
+                    <!-- ./th-header__lang -->
+
+                    <div class="th-header__call">
+                        <span class="th-header__call__text">Call center:</span><a href="#">+1 (123) 123-45-67</a>
+                    </div>
+                    <!-- /.th-header__call -->
+                </div>
+                <div class="th-header-colored__l__r">
+                    <div class="th-header__nav-burger">
+                        <div class="th-nav-burger js-th-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="th-header-colored__r">
+                <nav class="th-header__nav th-nav">
+    <ul>
+        <li class="th-nav__item th-nav__item_active"><a href="/individual-tour.html" class="th-truncate">Individual tour</a></li>
+        <li class="th-nav__item"><a href="/countries.html" class="th-truncate">Countries</a></li>
+        <li class="th-nav__item"><a href="#" class="th-truncate">Partners</a></li>
+        <li class="th-nav__item"><a href="/about-us.html" class="th-truncate">About Us</a></li>
+    </ul>
+</nav>
+<!-- ./th-nav -->
+            </div>
+            <!-- ./th-header-colored__r -->
+            
+        </div>
+    </div>
+</div>
+<!-- ./th-header-c -->
+
+    
+
+    
+    <div class="th-header th-header-white-wr">
+
+        <div class="container th-no-p">
+            <div class="th-header-white">
+
+                <div>
+                    <a href="/" class="th-header__logo-sm  th-header__logo-sm_visible ">
+                        <img src="images/logo-sm.png" srcset="images/logo-sm.png 1x, images/logo-sm@2x.png 2x" alt="TravelHub Logo">
+                    </a>
+
+                    <div class="th-header__motto">
+                        Travel Hub — Travelling Without Borders.
+                    </div>
+                    <!-- ./th-header__motto -->
+                </div>
+                
+                
+                
+
+                
+                    <div class="th-header__login">
+                        <ul class="th-login-nav">
+                            <li class="th-login-nav__item th-login-nav__user">
+                                <a href="#" class="th-truncate js-th-user-menu">
+                                    <span class="th-login-nav__user-profile">
+                                        <span class="th-login-nav__user-thumb">
+                                            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+                                        </span>
+                                        <span class="th-login-nav__user-badge">3</span>
+                                    </span>
+                                    Alex Murphi
+                                </a>
+                            </li>
+                            <li class="th-login-nav__divider">|</li>
+                            <li class="th-login-nav__item">
+                                <a href="/login.html" class="th-truncate">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ./th-header-white-wr -->
+
+  </header>
+  <!-- ./header -->
+
+  <main>
+    <div class="th-search">
+      <div class="container th-no-p-sm">
+        <div class="th-row-flex th-row-spread">
+          <div>
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li class="active">Search tour</li>
+            </ol>
+            <h2 class="th-no-mt visible-sm">Search Tour</h2>
+          </div>
+          <div class="th-search__sort">
+            <label for="search-sort" class="th-search__sort__label">Sort by:</label>
+            <select name="sortby" id="search-sort" class="form-control">
+              <option value="Popularity">Popularity</option>
+              <option value="Newest">Newest</option>
+              <option value="Hottest">Hottest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="th-search__wrap">
+          <div class="th-search__content" id="search-content">
+            <div class="th-search__options">
+              <h4 class="th-search__options__title">Search Options</h4>
+              <form action="">
+                <div class="th-search__block">
+                  <h4>Countries</h4>
+                  <input type="text" class="form-control" value="Italy">
+                  <input type="text" class="form-control" placeholder="Add country">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Departure Data</h4>
+                  <select class="form-control">
+                    <option value="Jan-2017">Jan 2017</option>
+                    <option value="Feb-2017">Feb 2017</option>
+                    <option value="Mar-2017">Mar 2017</option>
+                  </select>
+                  <select class="form-control">
+                    <option selected disabled>Add date</option>
+                    <option value="Jan-2017">Jan 2017</option>
+                    <option value="Feb-2017">Feb 2017</option>
+                    <option value="Mar-2017">Mar 2017</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Type</h4>
+                  <select class="form-control">
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="" selected disabled>Add type</option>
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Duration</h4>
+                  <input type="range" class="form-control">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Budget</h4>
+                  <input type="range" class="form-control">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Guide</h4>
+                  <span class="th-checkbox">
+                    <input type="checkbox" name="send-deals" id="guide" checked="">
+                    <label class="th-checkbox__label" for="guide">
+                      <span class="th-checkbox--faux"></span>
+                      <span class="th-form-element__label">Guide</span>
+                    </label>
+                  </span>
+                  <select class="form-control">
+                    <option value="" selected disabled>Language</option>
+                    <option value="bus">English</option>
+                    <option value="car">French</option>
+                    <option value="bike">Italian</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Services</h4>
+                  <div class="th-mb15 th-mt15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="visa" checked="true">
+                      <label class="th-checkbox__label" for="visa">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Visa</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="transfer">
+                      <label class="th-checkbox__label" for="transfer">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Transfer</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="accom" checked="true">
+                      <label class="th-checkbox__label" for="accom">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Accomodation</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="meals">
+                      <label class="th-checkbox__label" for="meals">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Meals</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="Hostel" checked="true">
+                      <label class="th-checkbox__label" for="Hostel">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Hostel</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="Food">
+                      <label class="th-checkbox__label" for="Food">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Food</span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Tour Operator</h4>
+                  <select class="form-control">
+                    <option value="wingbuddy">Wingbuddy</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="" selected disabled>Add one</option>
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                </div>
+
+
+              </form>
+
+            </div>
+
+            <div class="th-search__list">
+              <h2 class="th-search__list__title">Search</h2>
+
+              <div class="th-tour-panel-detail">
+                <div class="th-tour-panel-detail__img">
+                  <img src="images/about-us-1.jpg" alt="">
+                  <ul class="th-tour-panel-detail__img-nav">
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.02 23.26">
+                          <defs><clipPath id="clip-path" transform="translate(0 -0.74)"><rect width="24.96" height="24.96" style="fill:none"/></clipPath></defs>
+                          <g style="clip-path:url(#clip-path)">
+                            <path d="M20.24,7.38a2,2,0,1,0-2.83,0,2,2,0,0,0,2.83,0Zm-4.61,5.36h2.8a.8.8,0,0,0,1-.11l2.83-2.8a.71.71,0,0,0,.08-.11c.07-.06.14-.1.21-.17a5.12,5.12,0,0,0,0-7.29,5.24,5.24,0,0,0-7.36,0,5.12,5.12,0,0,0,0,7.29c.07.07.14.11.21.17a.5.5,0,0,0,.07.11l1.36,1.34h-1.2v0A3.6,3.6,0,0,0,12,14.79a3.56,3.56,0,0,0,3.6,3.55h3.2a2,2,0,0,1,2,2,2,2,0,0,1-2,2H7.2L8.6,21a.85.85,0,0,0,.08-.11l.21-.17a5.13,5.13,0,0,0,0-7.29,5.25,5.25,0,0,0-7.36,0,5.13,5.13,0,0,0,0,7.29l.21.17a.53.53,0,0,0,.08.11l2.83,2.8a.79.79,0,0,0,.78.19H18.88a3.59,3.59,0,0,0,0-7.18H15.53a2,2,0,0,1-1.9-2,2,2,0,0,1,2-2.05Zm.65-4.31h0a3.54,3.54,0,0,1,0-5,3.63,3.63,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5l0,0h0l-2.52,2.5ZM5.21,22.1,2.66,19.58h0a3.55,3.55,0,0,1,0-5.05,3.64,3.64,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5.05l0,0h0ZM3.81,15.76a2,2,0,1,0,2.83,0,2,2,0,0,0-2.83,0Zm0,0" transform="translate(0 -0.74)"/>
+                          </g>
+                        </svg>
+                        Route
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.65 25.69">
+                          <defs>
+                            <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
+                            <clipPath id="clip-path"><rect class="cls-1" width="29.76" height="26"/></clipPath>
+                          </defs>
+                          <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                              <g class="cls-2"><path d="M29.43,8.06,12.63,0a.39.39,0,0,0-.52.18L8.45,7.87h2l2.68-5.62,14.57,7-4.55,9.53-2.57-1.22v5l1.58.75a.39.39,0,0,0,.52-.19L29.61,8.59a.39.39,0,0,0-.18-.52Zm0,0"/></g><path d="M19,8.8H.39A.39.39,0,0,0,0,9.19V25.3a.4.4,0,0,0,.39.39H19a.39.39,0,0,0,.39-.39V9.19A.39.39,0,0,0,19,8.8ZM17.94,21.14H16.76c-.69-1.76-1.53-4.23-2.82-3.9-1.5.39-2.25,3.9-2.25,3.9s-.77-4-2.89-6.09-4.18,6.09-4.18,6.09H1.8V10.58H17.94Zm0,0"/><path d="M5.72,12.84A1.32,1.32,0,1,1,4.4,11.53a1.32,1.32,0,0,1,1.32,1.32Zm0,0"/><path d="M13.23,13.77a4.39,4.39,0,0,0,.82-.08,2.63,2.63,0,0,0,1,.2c1,0,1.76-.47,1.76-1.06s-.79-1.06-1.76-1.06a2.57,2.57,0,0,0-1,.18.62.62,0,0,0-.44-.18h-.25a.63.63,0,0,0-.62.56c-.79.08-1.37.37-1.37.7s.82.73,1.84.73Zm0,0"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Photos
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="th-tour-panel-detail__content">
+                  <div class="th-tour-panel-detail__l">
+                    <div class="th-tour-panel-detail__head">
+                      <h4>Island Travel</h4>
+                    </div>
+                    <table class="th-tour-panel-detail__table">
+                      <tbody>
+                        <tr>
+                          <td><p>Country</p></td>
+                          <td><p>Country</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Start / ends in</p></td>
+                          <td><p>Rome / Rome</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Destination</p></td>
+                          <td><p>7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Tour Tyle</p></td>
+                          <td><p>Bus tour</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Tour Operator</p></td>
+                          <td><p>Wingbuddy</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="th-tour-panel-detail__r">
+                    <div class="th-tour-panel-detail__head th-row-spread th-row-flex th-row-vertical-align">
+                      <a href="#">Ask a question</a>
+                      <div class="th-tour-panel-detail__duration">10 days</div>
+                    </div>
+
+                    <div class="th-tour-panel-detail__price">
+                      <h4>&euro; 1200</h4>
+                      <p class="th-search__text-muted">&euro; 120 per day</p>
+                    </div>
+                    <div class="th-row-flex th-row-spread th-pt10 th-pb15">
+                      <p class="th-tour-panel-detail__meta">2 July 2017</p>
+                      <p class="th-tour-panel-detail__meta muted">10+ seats left</p>
+                    </div>
+
+                    <button class="btn btn-primary">View More</button>
+                    <button class="btn btn-outline">Book Now</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="th-tour-panel-detail">
+                <div class="th-tour-panel-detail__img">
+                  <img src="images/about-us-1.jpg" alt="">
+                  <ul class="th-tour-panel-detail__img-nav">
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.02 23.26">
+                          <defs><clipPath id="clip-path" transform="translate(0 -0.74)"><rect width="24.96" height="24.96" style="fill:none"/></clipPath></defs>
+                          <g style="clip-path:url(#clip-path)">
+                            <path d="M20.24,7.38a2,2,0,1,0-2.83,0,2,2,0,0,0,2.83,0Zm-4.61,5.36h2.8a.8.8,0,0,0,1-.11l2.83-2.8a.71.71,0,0,0,.08-.11c.07-.06.14-.1.21-.17a5.12,5.12,0,0,0,0-7.29,5.24,5.24,0,0,0-7.36,0,5.12,5.12,0,0,0,0,7.29c.07.07.14.11.21.17a.5.5,0,0,0,.07.11l1.36,1.34h-1.2v0A3.6,3.6,0,0,0,12,14.79a3.56,3.56,0,0,0,3.6,3.55h3.2a2,2,0,0,1,2,2,2,2,0,0,1-2,2H7.2L8.6,21a.85.85,0,0,0,.08-.11l.21-.17a5.13,5.13,0,0,0,0-7.29,5.25,5.25,0,0,0-7.36,0,5.13,5.13,0,0,0,0,7.29l.21.17a.53.53,0,0,0,.08.11l2.83,2.8a.79.79,0,0,0,.78.19H18.88a3.59,3.59,0,0,0,0-7.18H15.53a2,2,0,0,1-1.9-2,2,2,0,0,1,2-2.05Zm.65-4.31h0a3.54,3.54,0,0,1,0-5,3.63,3.63,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5l0,0h0l-2.52,2.5ZM5.21,22.1,2.66,19.58h0a3.55,3.55,0,0,1,0-5.05,3.64,3.64,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5.05l0,0h0ZM3.81,15.76a2,2,0,1,0,2.83,0,2,2,0,0,0-2.83,0Zm0,0" transform="translate(0 -0.74)"/>
+                          </g>
+                        </svg>
+                        Route
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.65 25.69">
+                          <defs>
+                            <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
+                            <clipPath id="clip-path"><rect class="cls-1" width="29.76" height="26"/></clipPath>
+                          </defs>
+                          <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                              <g class="cls-2"><path d="M29.43,8.06,12.63,0a.39.39,0,0,0-.52.18L8.45,7.87h2l2.68-5.62,14.57,7-4.55,9.53-2.57-1.22v5l1.58.75a.39.39,0,0,0,.52-.19L29.61,8.59a.39.39,0,0,0-.18-.52Zm0,0"/></g><path d="M19,8.8H.39A.39.39,0,0,0,0,9.19V25.3a.4.4,0,0,0,.39.39H19a.39.39,0,0,0,.39-.39V9.19A.39.39,0,0,0,19,8.8ZM17.94,21.14H16.76c-.69-1.76-1.53-4.23-2.82-3.9-1.5.39-2.25,3.9-2.25,3.9s-.77-4-2.89-6.09-4.18,6.09-4.18,6.09H1.8V10.58H17.94Zm0,0"/><path d="M5.72,12.84A1.32,1.32,0,1,1,4.4,11.53a1.32,1.32,0,0,1,1.32,1.32Zm0,0"/><path d="M13.23,13.77a4.39,4.39,0,0,0,.82-.08,2.63,2.63,0,0,0,1,.2c1,0,1.76-.47,1.76-1.06s-.79-1.06-1.76-1.06a2.57,2.57,0,0,0-1,.18.62.62,0,0,0-.44-.18h-.25a.63.63,0,0,0-.62.56c-.79.08-1.37.37-1.37.7s.82.73,1.84.73Zm0,0"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Photos
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="th-tour-panel-detail__content">
+                  <div class="th-tour-panel-detail__l">
+                    <div class="th-tour-panel-detail__head">
+                      <h4>Island Travel</h4>
+                    </div>
+                    <table class="th-tour-panel-detail__table">
+                      <tbody>
+                      <tr>
+                        <td><p>Country</p></td>
+                        <td><p>Country</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Start / ends in</p></td>
+                        <td><p>Rome / Rome</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Destination</p></td>
+                        <td><p>7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Tour Tyle</p></td>
+                        <td><p>Bus tour</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Tour Operator</p></td>
+                        <td><p>Wingbuddy</p></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="th-tour-panel-detail__r">
+                    <div class="th-tour-panel-detail__head th-row-spread th-row-flex th-row-vertical-align">
+                      <a href="#">Ask a question</a>
+                      <div class="th-tour-panel-detail__duration">10 days</div>
+                    </div>
+
+                    <div class="th-tour-panel-detail__price">
+                      <h4>&euro; 1200</h4>
+                      <p class="th-search__text-muted">&euro; 120 per day</p>
+                    </div>
+                    <div class="th-row-flex th-row-spread th-pt10 th-pb15">
+                      <p class="th-tour-panel-detail__meta">2 July 2017</p>
+                      <p class="th-tour-panel-detail__meta muted">10+ seats left</p>
+                    </div>
+
+                    <button class="btn btn-primary">View More</button>
+                    <button class="btn btn-outline">Book Now</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+              <nav aria-label="Page navigation" class="text-center th-pagination">
+    <ul class="pagination">
+        <li class="disabled">
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">< Back</span>
+            </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">Next ></span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- ./th-pagination -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+<div class="th-agent-layout__sidebar th-agent-panel  visible-sm-block visible-xs-block ">
+    <div class="th-agent-panel__header">
+        <div class="th-agent-panel__thumb">
+            <img src="http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg" alt="">
+        </div>
+        <div class="th-agent-panel__title">
+            
+                <div class="th-agent-panel__name">ALEX MURPHI</div>
+                <div class="th-agent-panel__position">TOUR MANAGER</div>
+            
+            
+        </div>
+    </div>
+    <!-- ./th-agent-panel__header -->
+
+    <ul class="th-agent-panel__nav">
+        
+        <li>
+            <a href="#">
+                Messages
+                <span class="th-agent-panel__badge">2</span>
+            </a>
+        </li>
+        <li><a href="#" class="active">My Tours</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Auctions</a></li>
+        <li><a href="#">Contact administration</a></li>
+        
+        
+    </ul>
+    <!-- ./th-agent-panel__nav -->
+</div>
+
+    <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
+  </main>
+
+
+  <footer class="th-footer">
+    <div class="th-footer-top-wr">
+        <div class="container">
+            <div class="th-footer-top">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="th-footer__heading">Navigation</div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <nav class="th-footer__nav">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Partner Login</a></li>
+                                                <li><a href="#">Tour Operators</a></li>
+                                            </ul>
+                                        </nav>
+                                        <!-- ./th-footer__nav -->
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <nav class="th-footer__nav">
+                                            <ul>
+                                                <li><a href="#">Guide Login</a></li>
+                                                <li><a href="#">Join Guid Community</a></li>
+                                            </ul>
+                                        </nav>
+                                        <!-- ./th-footer__nav -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="th-footer__heading">Search</div>
+
+                                <form class="form-inline th-footer__search">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter the keywords">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary visible-lg-inline-block">Search</button>
+                                </form>
+                                <!-- ./th-footer__search -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-sm-offset-1">
+                        <div class="th-footer__heading">CONTACTS</div>
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">Call Center:</div>
+                            <div class="th-footer__contact__tel">+1 (123) 12-34-56</div>
+                        </div>
+                        <!-- ./th-footer__contact -->
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">E-mail:</div>
+                            <a href="#" class="th-footer__contact__email">info@travelhub.com</a>
+                        </div>
+                        <!-- ./th-footer__contact -->
+
+                        <div class="th-footer__contact">
+                            <div class="th-footer__contact__label">Follow us:</div>
+                            <ul class="th-footer__social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- ./th-footer__contact -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./th-footer-top-wr -->
+
+    <div class="th-footer-bottom">
+        <div class="container">
+            <div class="th-footer__copy">Copyright &copy; TravelHub. All rights reserved.</div>
+        </div>
+    </div>
+    <!-- ./th-footer-bottom -->
+</footer>
+
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>-->
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="scripts/vendor/bootstrap.js"></script>
+    <script src="/bower_components/matchHeight/jquery.matchHeight.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

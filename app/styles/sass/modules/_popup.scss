@@ -1,0 +1,32 @@
+.th-modal {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  margin: 20px auto;
+  border-radius: 6px;
+
+  &.th-modal--response {
+    max-width: 430px;
+
+    @include MQM(XS) {
+      width: 80%;
+    }
+  }
+
+  &__btn {
+    margin-top: 18px;
+    width: 200px;
+  }
+
+  &__heading1 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__heading2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bbb;
+  }
+}

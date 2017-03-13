@@ -1,0 +1,380 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <header>
+    {% include "partials/header-top.nunjucks" %}
+
+    {% import 'macros/header-bottom.nunjucks' as headerBottom  %}
+
+    {{ headerBottom.status(true, false, true) }}
+  </header>
+  <!-- ./header -->
+
+  <main>
+    <div class="th-search">
+      <div class="container th-no-p-sm">
+        <div class="th-row-flex th-row-spread">
+          <div>
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li class="active">Search tour</li>
+            </ol>
+            <h2 class="th-no-mt visible-sm">Search Tour</h2>
+          </div>
+          <div class="th-search__sort">
+            <label for="search-sort" class="th-search__sort__label">Sort by:</label>
+            <select name="sortby" id="search-sort" class="form-control">
+              <option value="Popularity">Popularity</option>
+              <option value="Newest">Newest</option>
+              <option value="Hottest">Hottest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="th-search__wrap">
+          <div class="th-search__content" id="search-content">
+            <div class="th-search__options">
+              <h4 class="th-search__options__title">Search Options</h4>
+              <form action="">
+                <div class="th-search__block">
+                  <h4>Countries</h4>
+                  <input type="text" class="form-control" value="Italy">
+                  <input type="text" class="form-control" placeholder="Add country">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Departure Data</h4>
+                  <select class="form-control">
+                    <option value="Jan-2017">Jan 2017</option>
+                    <option value="Feb-2017">Feb 2017</option>
+                    <option value="Mar-2017">Mar 2017</option>
+                  </select>
+                  <select class="form-control">
+                    <option selected disabled>Add date</option>
+                    <option value="Jan-2017">Jan 2017</option>
+                    <option value="Feb-2017">Feb 2017</option>
+                    <option value="Mar-2017">Mar 2017</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Type</h4>
+                  <select class="form-control">
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="" selected disabled>Add type</option>
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Duration</h4>
+                  <input type="range" class="form-control">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Budget</h4>
+                  <input type="range" class="form-control">
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Guide</h4>
+                  <span class="th-checkbox">
+                    <input type="checkbox" name="send-deals" id="guide" checked="">
+                    <label class="th-checkbox__label" for="guide">
+                      <span class="th-checkbox--faux"></span>
+                      <span class="th-form-element__label">Guide</span>
+                    </label>
+                  </span>
+                  <select class="form-control">
+                    <option value="" selected disabled>Language</option>
+                    <option value="bus">English</option>
+                    <option value="car">French</option>
+                    <option value="bike">Italian</option>
+                  </select>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Services</h4>
+                  <div class="th-mb15 th-mt15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="visa" checked="true">
+                      <label class="th-checkbox__label" for="visa">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Visa</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="transfer">
+                      <label class="th-checkbox__label" for="transfer">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Transfer</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="accom" checked="true">
+                      <label class="th-checkbox__label" for="accom">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Accomodation</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="meals">
+                      <label class="th-checkbox__label" for="meals">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Meals</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="th-mb15">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="Hostel" checked="true">
+                      <label class="th-checkbox__label" for="Hostel">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Hostel</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="">
+                    <span class="th-checkbox">
+                      <input type="checkbox" name="send-deals" id="Food">
+                      <label class="th-checkbox__label" for="Food">
+                        <span class="th-checkbox--faux"></span>
+                        <span class="th-form-element__label">Food</span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="th-search__block">
+                  <h4>Tour Operator</h4>
+                  <select class="form-control">
+                    <option value="wingbuddy">Wingbuddy</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                  <select class="form-control">
+                    <option value="" selected disabled>Add one</option>
+                    <option value="bus">Bus tour</option>
+                    <option value="car">Car tour</option>
+                    <option value="bike">Bike tour</option>
+                  </select>
+                </div>
+
+
+              </form>
+
+            </div>
+
+            <div class="th-search__list">
+              <h2 class="th-search__list__title">Search</h2>
+
+              <div class="th-tour-panel-detail">
+                <div class="th-tour-panel-detail__img">
+                  <img src="images/about-us-1.jpg" alt="">
+                  <ul class="th-tour-panel-detail__img-nav">
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.02 23.26">
+                          <defs><clipPath id="clip-path" transform="translate(0 -0.74)"><rect width="24.96" height="24.96" style="fill:none"/></clipPath></defs>
+                          <g style="clip-path:url(#clip-path)">
+                            <path d="M20.24,7.38a2,2,0,1,0-2.83,0,2,2,0,0,0,2.83,0Zm-4.61,5.36h2.8a.8.8,0,0,0,1-.11l2.83-2.8a.71.71,0,0,0,.08-.11c.07-.06.14-.1.21-.17a5.12,5.12,0,0,0,0-7.29,5.24,5.24,0,0,0-7.36,0,5.12,5.12,0,0,0,0,7.29c.07.07.14.11.21.17a.5.5,0,0,0,.07.11l1.36,1.34h-1.2v0A3.6,3.6,0,0,0,12,14.79a3.56,3.56,0,0,0,3.6,3.55h3.2a2,2,0,0,1,2,2,2,2,0,0,1-2,2H7.2L8.6,21a.85.85,0,0,0,.08-.11l.21-.17a5.13,5.13,0,0,0,0-7.29,5.25,5.25,0,0,0-7.36,0,5.13,5.13,0,0,0,0,7.29l.21.17a.53.53,0,0,0,.08.11l2.83,2.8a.79.79,0,0,0,.78.19H18.88a3.59,3.59,0,0,0,0-7.18H15.53a2,2,0,0,1-1.9-2,2,2,0,0,1,2-2.05Zm.65-4.31h0a3.54,3.54,0,0,1,0-5,3.63,3.63,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5l0,0h0l-2.52,2.5ZM5.21,22.1,2.66,19.58h0a3.55,3.55,0,0,1,0-5.05,3.64,3.64,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5.05l0,0h0ZM3.81,15.76a2,2,0,1,0,2.83,0,2,2,0,0,0-2.83,0Zm0,0" transform="translate(0 -0.74)"/>
+                          </g>
+                        </svg>
+                        Route
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.65 25.69">
+                          <defs>
+                            <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
+                            <clipPath id="clip-path"><rect class="cls-1" width="29.76" height="26"/></clipPath>
+                          </defs>
+                          <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                              <g class="cls-2"><path d="M29.43,8.06,12.63,0a.39.39,0,0,0-.52.18L8.45,7.87h2l2.68-5.62,14.57,7-4.55,9.53-2.57-1.22v5l1.58.75a.39.39,0,0,0,.52-.19L29.61,8.59a.39.39,0,0,0-.18-.52Zm0,0"/></g><path d="M19,8.8H.39A.39.39,0,0,0,0,9.19V25.3a.4.4,0,0,0,.39.39H19a.39.39,0,0,0,.39-.39V9.19A.39.39,0,0,0,19,8.8ZM17.94,21.14H16.76c-.69-1.76-1.53-4.23-2.82-3.9-1.5.39-2.25,3.9-2.25,3.9s-.77-4-2.89-6.09-4.18,6.09-4.18,6.09H1.8V10.58H17.94Zm0,0"/><path d="M5.72,12.84A1.32,1.32,0,1,1,4.4,11.53a1.32,1.32,0,0,1,1.32,1.32Zm0,0"/><path d="M13.23,13.77a4.39,4.39,0,0,0,.82-.08,2.63,2.63,0,0,0,1,.2c1,0,1.76-.47,1.76-1.06s-.79-1.06-1.76-1.06a2.57,2.57,0,0,0-1,.18.62.62,0,0,0-.44-.18h-.25a.63.63,0,0,0-.62.56c-.79.08-1.37.37-1.37.7s.82.73,1.84.73Zm0,0"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Photos
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="th-tour-panel-detail__content">
+                  <div class="th-tour-panel-detail__l">
+                    <div class="th-tour-panel-detail__head">
+                      <h4>Island Travel</h4>
+                    </div>
+                    <table class="th-tour-panel-detail__table">
+                      <tbody>
+                        <tr>
+                          <td><p>Country</p></td>
+                          <td><p>Country</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Start / ends in</p></td>
+                          <td><p>Rome / Rome</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Destination</p></td>
+                          <td><p>7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Tour Tyle</p></td>
+                          <td><p>Bus tour</p></td>
+                        </tr>
+                        <tr>
+                          <td><p>Tour Operator</p></td>
+                          <td><p>Wingbuddy</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="th-tour-panel-detail__r">
+                    <div class="th-tour-panel-detail__head th-row-spread th-row-flex th-row-vertical-align">
+                      <a href="#">Ask a question</a>
+                      <div class="th-tour-panel-detail__duration">10 days</div>
+                    </div>
+
+                    <div class="th-tour-panel-detail__price">
+                      <h4>&euro; 1200</h4>
+                      <p class="th-search__text-muted">&euro; 120 per day</p>
+                    </div>
+                    <div class="th-row-flex th-row-spread th-pt10 th-pb15">
+                      <p class="th-tour-panel-detail__meta">2 July 2017</p>
+                      <p class="th-tour-panel-detail__meta muted">10+ seats left</p>
+                    </div>
+
+                    <button class="btn btn-primary">View More</button>
+                    <button class="btn btn-outline">Book Now</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="th-tour-panel-detail">
+                <div class="th-tour-panel-detail__img">
+                  <img src="images/about-us-1.jpg" alt="">
+                  <ul class="th-tour-panel-detail__img-nav">
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.02 23.26">
+                          <defs><clipPath id="clip-path" transform="translate(0 -0.74)"><rect width="24.96" height="24.96" style="fill:none"/></clipPath></defs>
+                          <g style="clip-path:url(#clip-path)">
+                            <path d="M20.24,7.38a2,2,0,1,0-2.83,0,2,2,0,0,0,2.83,0Zm-4.61,5.36h2.8a.8.8,0,0,0,1-.11l2.83-2.8a.71.71,0,0,0,.08-.11c.07-.06.14-.1.21-.17a5.12,5.12,0,0,0,0-7.29,5.24,5.24,0,0,0-7.36,0,5.12,5.12,0,0,0,0,7.29c.07.07.14.11.21.17a.5.5,0,0,0,.07.11l1.36,1.34h-1.2v0A3.6,3.6,0,0,0,12,14.79a3.56,3.56,0,0,0,3.6,3.55h3.2a2,2,0,0,1,2,2,2,2,0,0,1-2,2H7.2L8.6,21a.85.85,0,0,0,.08-.11l.21-.17a5.13,5.13,0,0,0,0-7.29,5.25,5.25,0,0,0-7.36,0,5.13,5.13,0,0,0,0,7.29l.21.17a.53.53,0,0,0,.08.11l2.83,2.8a.79.79,0,0,0,.78.19H18.88a3.59,3.59,0,0,0,0-7.18H15.53a2,2,0,0,1-1.9-2,2,2,0,0,1,2-2.05Zm.65-4.31h0a3.54,3.54,0,0,1,0-5,3.63,3.63,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5l0,0h0l-2.52,2.5ZM5.21,22.1,2.66,19.58h0a3.55,3.55,0,0,1,0-5.05,3.64,3.64,0,0,1,5.1,0,3.55,3.55,0,0,1,0,5.05l0,0h0ZM3.81,15.76a2,2,0,1,0,2.83,0,2,2,0,0,0-2.83,0Zm0,0" transform="translate(0 -0.74)"/>
+                          </g>
+                        </svg>
+                        Route
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.65 25.69">
+                          <defs>
+                            <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
+                            <clipPath id="clip-path"><rect class="cls-1" width="29.76" height="26"/></clipPath>
+                          </defs>
+                          <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                              <g class="cls-2"><path d="M29.43,8.06,12.63,0a.39.39,0,0,0-.52.18L8.45,7.87h2l2.68-5.62,14.57,7-4.55,9.53-2.57-1.22v5l1.58.75a.39.39,0,0,0,.52-.19L29.61,8.59a.39.39,0,0,0-.18-.52Zm0,0"/></g><path d="M19,8.8H.39A.39.39,0,0,0,0,9.19V25.3a.4.4,0,0,0,.39.39H19a.39.39,0,0,0,.39-.39V9.19A.39.39,0,0,0,19,8.8ZM17.94,21.14H16.76c-.69-1.76-1.53-4.23-2.82-3.9-1.5.39-2.25,3.9-2.25,3.9s-.77-4-2.89-6.09-4.18,6.09-4.18,6.09H1.8V10.58H17.94Zm0,0"/><path d="M5.72,12.84A1.32,1.32,0,1,1,4.4,11.53a1.32,1.32,0,0,1,1.32,1.32Zm0,0"/><path d="M13.23,13.77a4.39,4.39,0,0,0,.82-.08,2.63,2.63,0,0,0,1,.2c1,0,1.76-.47,1.76-1.06s-.79-1.06-1.76-1.06a2.57,2.57,0,0,0-1,.18.62.62,0,0,0-.44-.18h-.25a.63.63,0,0,0-.62.56c-.79.08-1.37.37-1.37.7s.82.73,1.84.73Zm0,0"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Photos
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="th-tour-panel-detail__content">
+                  <div class="th-tour-panel-detail__l">
+                    <div class="th-tour-panel-detail__head">
+                      <h4>Island Travel</h4>
+                    </div>
+                    <table class="th-tour-panel-detail__table">
+                      <tbody>
+                      <tr>
+                        <td><p>Country</p></td>
+                        <td><p>Country</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Start / ends in</p></td>
+                        <td><p>Rome / Rome</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Destination</p></td>
+                        <td><p>7 (Rome, Milan, Verona, Florencia, Venesia, Neapolis, Barium)</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Tour Tyle</p></td>
+                        <td><p>Bus tour</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>Tour Operator</p></td>
+                        <td><p>Wingbuddy</p></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="th-tour-panel-detail__r">
+                    <div class="th-tour-panel-detail__head th-row-spread th-row-flex th-row-vertical-align">
+                      <a href="#">Ask a question</a>
+                      <div class="th-tour-panel-detail__duration">10 days</div>
+                    </div>
+
+                    <div class="th-tour-panel-detail__price">
+                      <h4>&euro; 1200</h4>
+                      <p class="th-search__text-muted">&euro; 120 per day</p>
+                    </div>
+                    <div class="th-row-flex th-row-spread th-pt10 th-pb15">
+                      <p class="th-tour-panel-detail__meta">2 July 2017</p>
+                      <p class="th-tour-panel-detail__meta muted">10+ seats left</p>
+                    </div>
+
+                    <button class="btn btn-primary">View More</button>
+                    <button class="btn btn-outline">Book Now</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+              {% include 'partials/pagination.nunjucks' %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% import 'macros/user-sidebar.nunjucks' as userSidebar  %}
+    {{ userSidebar.status(true) }}
+    <div class="th-agent-layout__overlay js-th-agent-menu-overlay"></div>
+  </main>
+
+
+  {% include "partials/footer.nunjucks" %}
+
+
+{% endblock %}
+
+
+

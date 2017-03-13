@@ -2,6 +2,7 @@
   position: relative;
   background: #fff;
   border-radius: 6px;
+  width: 100%;
 
   &__header {
     position: relative;
@@ -118,16 +119,20 @@
   position: relative;
   border-bottom: 1px solid #e4e4e4;
 
+  li {
+    position: relative;
+  }
+
   .th-checkbox {
     position: absolute;
     top: 6px;
-    left: 0;
+    left: -26px;
   }
 
   &__close {
     position: absolute;
     top: 3px;
-    right: 0;
+    right: -24px;
 
     .fa {
       color: #bbb;
@@ -148,7 +153,7 @@
     @include justify-content(space-between);
     @include align-items(center);
     padding-left: 10px;
-    width: 25%;
+    width: 30%;
 
     input {
       width: 80%;
@@ -298,6 +303,7 @@
 
 
   &__table {
+    width: 100%;
     margin-top: 1.5rem;
 
     th {
@@ -337,6 +343,7 @@
   @include flex-flow(row wrap);
 
   &__image {
+    position: relative;
     width: 140px;
     height: 140px;
     overflow: hidden;
@@ -344,6 +351,58 @@
     border: 1px solid #e4e4e4;
     margin-bottom: 1rem;
     margin-right: 1rem;
+
+    &:hover {
+      border-color: #dc185b;
+      border-width: 2px;
+
+      .image-delete {
+        display: block;
+      }
+
+      .image-main {
+        @include transform(translateY(0));
+      }
+    }
+
+    &.main-image {
+      .image-main {
+        @include transform(translateY(0));
+      }
+    }
+
+    .image-delete {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 16px;
+      height: 16px;
+      border: none;
+      background: none;
+      padding: 0;
+      display: none;
+
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+    }
+
+    .image-main {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border: none;
+      background: rgba(0,0,0,0.4);
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 4px 0 3px;
+      @include transition(transform .15s ease-in-out);
+      @include transform(translateY(100%));
+    }
 
     img {
       width: 100%;
@@ -360,6 +419,15 @@
 
     input[type="file"] {
       display: none;
+
+      &:disabled {
+        & + label {
+          cursor: not-allowed;
+          span {
+            color: #bbb;
+          }
+        }
+      }
     }
 
     label {

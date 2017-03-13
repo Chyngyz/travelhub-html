@@ -1,0 +1,91 @@
+.th-ntour {
+  &__header {
+    padding: 20px 0;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    .back-btn {
+      width: 200px;
+      padding: 10px;
+
+      @media screen and (max-width: 480px) {
+        width: auto;
+      }
+    }
+  }
+
+  &__row {
+    @media screen and (max-width: 994px) {
+      @include flex-wrap(wrap);
+    }
+  }
+
+  &__left {
+    @include flex-basis(100%);
+
+    @media screen and (min-width: 994px) {
+      padding-right: 15px;
+      @include flex-basis(45%);
+    }
+  }
+
+  &__right {
+    @include flex-basis(100%);
+
+    @media screen and (min-width: 994px) {
+      padding-left: 15px;
+      @include flex-basis(55%);
+    }
+
+  }
+
+  &__form {
+    .form-control.error {
+      border-color: $red;
+    }
+
+    label.error {
+      font-size: 12px;
+      color: $red;
+    }
+  }
+}
+
+.th-ntour-layout {
+  .th-tour-panel-new {
+    margin-bottom: 15px;
+  }
+
+  .next-btn,
+  .submit-btn {
+    width: 210px;
+    padding: 10px;
+
+    span {
+      margin-left: 5px;
+      display: inline-block;
+      @include transform(translateY(1px));
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

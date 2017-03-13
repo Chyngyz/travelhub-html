@@ -24,6 +24,12 @@
             margin-bottom: 20px;
         }
 
+        &--has-error {
+            .th-login__form__input {
+                border: 2px solid #e22020;
+            }
+        }
+
         &__heading {
             text-align: center;
             color: #fff;

@@ -54,12 +54,12 @@
         .form-group {
             position: relative;
 
-            label {
+            .th-signup__form__label {
                 color: #bbb;
                 position: absolute;
                 margin-bottom: 0;
-                top: 50%;
-                @include transform(translate(-120%, -50%));
+                top: 11px;
+                @include transform(translateX(-120%));
                 width: 130px;
 
                 @include MQM(SM) {
@@ -72,8 +72,17 @@
                 }
             }
 
+            label.error {
+                font-size: 12px;
+                color: $red;
+            }
+
             .form-control {
                 height: 42px;
+
+                &.error {
+                    border-color: $red;
+                }
             }
         }
     }

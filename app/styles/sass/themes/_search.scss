@@ -1,0 +1,108 @@
+.th-search {
+  padding: 20px 0 40px;
+
+  &__sort {
+    @include display(flex);
+    @include justify-content(flex-end);
+    @include align-items(center);
+    width: 30%;
+    label {
+      display: inline-block;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #bbb;
+      margin-right: 1rem;
+
+    }
+
+    select {
+      width: 170px;
+      height: 40px;
+      line-height:40px;
+      font-size: 14px;
+      border-color: #e4e4e4;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__content {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    @include display(flex);
+    @include flex-flow(row nowrap);
+  }
+
+  &__options {
+    width: 270px;
+    min-width: 270px;
+
+    &__title {
+      margin-top: -15px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #131313;
+      text-transform: uppercase;
+    }
+  }
+
+  &__block {
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+
+    @include MQM(MD) {
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 20px 45px 20px 15px;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #131313;
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+    }
+
+    .form-control {
+      font-size: 14px;
+      color: #131313;
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 1rem;
+      border-color: #e4e4e4;
+    }
+
+    .th-checkbox {
+      .th-form-element__label {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+    padding-left: 30px;
+
+    &__title {
+      margin-top: -20px;
+    }
+  }
+
+  &__text-muted {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+

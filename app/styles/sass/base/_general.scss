@@ -1,4 +1,6 @@
 $pink: #dc185b;
+$red: #e22020;
+$green: #1cd234;
 
 .th-truncate {
   max-width: 100%;
@@ -75,11 +77,15 @@ $pink: #dc185b;
   display: inline-block;
 }
 
-$values: 10, 15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 80, 90, 100;
+$values: 5, 10, 15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 80, 90, 100;
 
 @each $value in $values {
   .th-w#{$value} {
     width: #{$value}px !important;
+  }
+
+  .th-w#{$value}p {
+    width: #{$value}% !important;
   }
 
   .th-pt#{$value} {
@@ -134,3 +140,45 @@ $values: 10, 15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 80, 90, 100;
 .th-bl {
   border-left: 1px solid #bbb;
 }
+
+
+.th-text-danger {
+  color: $red;
+}
+
+.th-text-success {
+  color: $green;
+}
+
+.th-text-muted {
+  color: #bbb;
+}
+
+.th-row-flex {
+  @include display(flex);
+}
+
+.th-row-spread {
+  @include justify-content(space-between);
+}
+
+.th-row-start {
+  @include justify-content(flex-start);
+}
+
+.th-row-end {
+  @include justify-content(flex-end);
+}
+
+.th-row-vertical-align {
+  @include align-items(center);
+}
+
+.th-row-wrap {
+  @include flex-wrap(wrap);
+}
+
+.th-row-no-wrap {
+  @include flex-wrap(nowrap);
+}
+
