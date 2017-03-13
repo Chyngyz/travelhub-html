@@ -2,226 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b15f72-e85d-4fac-bc05-ac02612d532d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pages/search-tour.nunjucks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/sass/modules/_tour-panel-detail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/sass/themes/_search.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/base/_fonts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/base/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/base/_general.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/_bourbon-deprecated-upcoming.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/_bourbon.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_border-color.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_border-style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_border-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_ellipsis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_font-stacks.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_margin.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_padding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_position.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_prefixer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_retina-image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_text-inputs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_timing-functions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_triangle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/addons/_word-wrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_appearance.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_backface-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_background-image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_background.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_border-image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_calc.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_columns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_flex-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_font-face.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_font-feature-settings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_hidpi-media-query.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_hyphens.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_image-rendering.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_keyframes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_linear-gradient.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_perspective.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_placeholder.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_radial-gradient.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_selection.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_text-decoration.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_transform.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_transition.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/css3/_user-select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_assign-inputs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_contains-falsy.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_contains.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_is-length.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_is-light.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_is-number.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_is-size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_modular-scale.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_px-to-em.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_px-to-rem.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_shade.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_strip-units.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_tint.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_transition-property-name.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/functions/_unpack.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_convert-units.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_directional-values.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_font-source-declaration.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_gradient-positions-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_linear-angle-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_linear-gradient-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_linear-positions-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_linear-side-corner-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_radial-arg-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_radial-gradient-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_radial-positions-parser.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_render-gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/helpers/_str-to-num.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/settings/_asset-pipeline.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/settings/_prefixer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/bourbon/settings/_px-to-em.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_agent-layout.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_agent-messages.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_agent-panel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_collapse-headings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_contact-card.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_footer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_header.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_lang-switcher.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_login-nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_nav-burger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_team.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_tour-panel-info.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_tour-panel-new.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_tour-panel-vert.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/modules/_tour-panel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_about.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_countries.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_error.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_eula.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_faq.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_home.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_ind-tour.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_login.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_new-tour.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_payment.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/themes/_signup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/utils/_responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/customScrollbar/jquery.mCustomScrollbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/font-awesome/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/magnificpopup/_settings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/vendor/magnificpopup/main.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/about-us.html" afterPath="$PROJECT_DIR$/app/about-us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/agent-history.html" afterPath="$PROJECT_DIR$/app/agent-history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/agent-messages.html" afterPath="$PROJECT_DIR$/app/agent-messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/countries.html" afterPath="$PROJECT_DIR$/app/countries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/create-tour.html" afterPath="$PROJECT_DIR$/app/create-tour.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/error.html" afterPath="$PROJECT_DIR$/app/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/eula.html" afterPath="$PROJECT_DIR$/app/eula.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/faq.html" afterPath="$PROJECT_DIR$/app/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home.html" afterPath="$PROJECT_DIR$/app/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/individual-tour.html" afterPath="$PROJECT_DIR$/app/individual-tour.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login.html" afterPath="$PROJECT_DIR$/app/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/operator-messages.html" afterPath="$PROJECT_DIR$/app/operator-messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/operators-tours.html" afterPath="$PROJECT_DIR$/app/operators-tours.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/payment.html" afterPath="$PROJECT_DIR$/app/payment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/signup.html" afterPath="$PROJECT_DIR$/app/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/layout.nunjucks" afterPath="$PROJECT_DIR$/app/templates/layout.nunjucks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/search-tour.nunjucks" afterPath="$PROJECT_DIR$/app/pages/search-tour.nunjucks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/search-tour.html" afterPath="$PROJECT_DIR$/app/search-tour.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -241,24 +24,25 @@
     <splitter split-orientation="horizontal" split-proportion="0.6204897">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="search-tour.nunjucks" pinned="false" current-in-tab="true">
+          <file leaf-file-name="search-tour.nunjucks" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/pages/search-tour.nunjucks">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
-                  <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+                <state relative-caret-position="252">
+                  <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
                   <folding>
-                    <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-                    <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                    <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-                    <element signature="e#12831#12837#0#HTML" expanded="true" />
-                    <element signature="e#12903#12909#0#HTML" expanded="true" />
-                    <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-                    <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                    <element signature="n#table#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-                    <element signature="e#18400#18406#0#HTML" expanded="true" />
-                    <element signature="e#18472#18478#0#HTML" expanded="true" />
+                    <element signature="n#div#0;n#main#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+                    <element signature="e#12427#12433#0#HTML" expanded="true" />
+                    <element signature="e#12497#12503#0#HTML" expanded="true" />
+                    <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+                    <element signature="n#table#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+                    <element signature="e#17834#17840#0#HTML" expanded="true" />
+                    <element signature="e#17904#17910#0#HTML" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -268,8 +52,21 @@
             <entry file="file://$PROJECT_DIR$/app/pages/operators-tours.nunjucks">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="472">
-                  <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="68" />
+                  <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="68" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="search-tour.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/search-tour.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="87">
+                  <caret line="535" column="9" lean-forward="true" selection-start-line="127" selection-start-column="2" selection-end-line="535" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <marker date="1489417584377" expanded="true" signature="23854:23868" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -399,8 +196,8 @@
         <option value="$PROJECT_DIR$/app/styles/sass/modules/_base.scss" />
         <option value="$PROJECT_DIR$/app/styles/sass/base/_general.scss" />
         <option value="$PROJECT_DIR$/app/styles/sass/modules/_tour-panel-detail.scss" />
-        <option value="$PROJECT_DIR$/app/pages/search-tour.nunjucks" />
         <option value="$PROJECT_DIR$/app/styles/sass/themes/_search.scss" />
+        <option value="$PROJECT_DIR$/app/pages/search-tour.nunjucks" />
       </list>
     </option>
   </component>
@@ -812,7 +609,7 @@
       <workItem from="1488203219413" duration="366000" />
       <workItem from="1488203624329" duration="5985000" />
       <workItem from="1489409057053" duration="477000" />
-      <workItem from="1489409551173" duration="7541000" />
+      <workItem from="1489409551173" duration="7701000" />
     </task>
     <task id="LOCAL-00001" summary="added eula page with drawer menu in mobile">
       <created>1485976781698</created>
@@ -832,7 +629,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77161000" />
+    <option name="totallyTimeSpent" value="77321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -874,13 +671,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/pages/agent-history.nunjucks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/modules/_tour-panel-info.scss" />
     <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1143,29 +933,8 @@
     <entry file="file://$PROJECT_DIR$/app/pages/operators-tours.nunjucks">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
-          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="68" />
+          <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="68" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/search-tour.nunjucks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-            <element signature="e#12831#12837#0#HTML" expanded="true" />
-            <element signature="e#12903#12909#0#HTML" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" expanded="false" />
-            <element signature="e#18400#18406#0#HTML" expanded="true" />
-            <element signature="e#18472#18478#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,6 +943,39 @@
         <state relative-caret-position="577">
           <caret line="96" column="23" lean-forward="false" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/search-tour.nunjucks">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="e#12427#12433#0#HTML" expanded="true" />
+            <element signature="e#12497#12503#0#HTML" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#rect#0;n#clipPath#0;n#defs#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#g#0;n#svg#0;n#button#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="e#17834#17840#0#HTML" expanded="true" />
+            <element signature="e#17904#17910#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/search-tour.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="535" column="9" lean-forward="true" selection-start-line="127" selection-start-column="2" selection-end-line="535" selection-end-column="9" />
+          <folding>
+            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1489417584377" expanded="true" signature="23854:23868" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
